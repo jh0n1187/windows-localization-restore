@@ -1,0 +1,10 @@
+{
+  "Name": "Win10-19041",
+  "Description": "Windows 10 2004/20H2/21H1/21H2/22H2 x64 - perfil COMPLETO (binarios 10.0.19041.x + registro do servico + registro COM extraidos da imagem 19041.3636 pt-BR)",
+  "MinBuild": 19041,
+  "MaxBuild": 19045,
+  "Arch": ["AMD64"],
+  "Features": { "Files": true, "ServiceRegistry": true, "ComRegistry": true, "Consent": true, "Policies": true },
+  "Note": "",
+  "TestedOn": ["Windows 10 Pro 22H2 19045.6811 x64 pt-BR (VM debloated)"]
+}

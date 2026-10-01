@@ -1,0 +1,10 @@
+{
+  "Name": "Win11",
+  "Description": "Windows 11 x64 (builds 22000+) - perfil PARCIAL: somente etapas agnosticas de versao (consentimento/privacidade e remocao das politicas que deixam a pagina 'gerenciada pela organizacao')",
+  "MinBuild": 22000,
+  "MaxBuild": 29999,
+  "Arch": ["AMD64"],
+  "Features": { "Files": false, "ServiceRegistry": false, "ComRegistry": false, "Consent": true, "Policies": true },
+  "Note": "Arquivos, registro do servico e registro COM sao apenas DIAGNOSTICADOS. Se faltarem, e necessario um perfil Win11 com dados extraidos de um install.wim do mesmo build.",
+  "TestedOn": []
+}

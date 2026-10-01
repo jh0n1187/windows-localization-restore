@@ -1,0 +1,9 @@
+# Gerados em cada maquina
+Logs/
+Backup/
+
+# Arquivos auxiliares locais
+*.bundle
+PUSH-GITHUB.cmd
+*.wim
+*.esd

@@ -1,0 +1,4902 @@
+[
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{037BB880-2613-4F6E-9F84-9574CCA8DEAC}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{037BB880-2613-4F6E-9F84-9574CCA8DEAC}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{037BB880-2613-4F6E-9F84-9574CCA8DEAC}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{037BB880-2613-4F6E-9F84-9574CCA8DEAC}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{0A4B8F34-D725-454D-B81D-3BEBE48382DC}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{0A4B8F34-D725-454D-B81D-3BEBE48382DC}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{0A4B8F34-D725-454D-B81D-3BEBE48382DC}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{0A4B8F34-D725-454D-B81D-3BEBE48382DC}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{0A77F7E3-36D2-4D32-83A8-496A4680C706}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{0A77F7E3-36D2-4D32-83A8-496A4680C706}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{0A77F7E3-36D2-4D32-83A8-496A4680C706}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{0A77F7E3-36D2-4D32-83A8-496A4680C706}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{0B30F034-02D5-4E2B-9BB7-A9F6538F4110}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{0B30F034-02D5-4E2B-9BB7-A9F6538F4110}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{0B30F034-02D5-4E2B-9BB7-A9F6538F4110}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{0B30F034-02D5-4E2B-9BB7-A9F6538F4110}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{0D9D975A-C577-4B5C-93B0-D1BE4944DEDE}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{0D9D975A-C577-4B5C-93B0-D1BE4944DEDE}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{0D9D975A-C577-4B5C-93B0-D1BE4944DEDE}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{0D9D975A-C577-4B5C-93B0-D1BE4944DEDE}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{103E1E59-66D1-4143-B772-8D846E96FEBF}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{103E1E59-66D1-4143-B772-8D846E96FEBF}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{103E1E59-66D1-4143-B772-8D846E96FEBF}\\InProcServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "ExpandString",
+      "Data": "%SystemRoot%\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{103E1E59-66D1-4143-B772-8D846E96FEBF}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{143B03BE-F4B9-4775-979E-5392AB1B7EB2}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{143B03BE-F4B9-4775-979E-5392AB1B7EB2}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{143B03BE-F4B9-4775-979E-5392AB1B7EB2}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{143B03BE-F4B9-4775-979E-5392AB1B7EB2}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{181A38F4-6CE6-4edc-8DB0-6E5631963A1E}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{181A38F4-6CE6-4edc-8DB0-6E5631963A1E}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{181A38F4-6CE6-4edc-8DB0-6E5631963A1E}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{181A38F4-6CE6-4edc-8DB0-6E5631963A1E}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{18F65133-BB77-4C67-8A64-D427BE942224}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{18F65133-BB77-4C67-8A64-D427BE942224}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{18F65133-BB77-4C67-8A64-D427BE942224}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{18F65133-BB77-4C67-8A64-D427BE942224}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{1DF1BDDA-A8FA-4E57-8015-8B621C4DBBE7}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{1DF1BDDA-A8FA-4E57-8015-8B621C4DBBE7}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{1DF1BDDA-A8FA-4E57-8015-8B621C4DBBE7}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{1DF1BDDA-A8FA-4E57-8015-8B621C4DBBE7}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{2475A152-2C35-4489-BCBA-A269BD3F5BA4}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{2475A152-2C35-4489-BCBA-A269BD3F5BA4}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{2475A152-2C35-4489-BCBA-A269BD3F5BA4}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{2475A152-2C35-4489-BCBA-A269BD3F5BA4}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{26ED43EA-45C6-4EF6-9E9B-1740366C98BF}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{26ED43EA-45C6-4EF6-9E9B-1740366C98BF}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{26ED43EA-45C6-4EF6-9E9B-1740366C98BF}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{26ED43EA-45C6-4EF6-9E9B-1740366C98BF}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{270411D9-9832-48D5-BC1C-CE606B00F42E}",
+  "RequiresFile": "System32\\LocationFrameworkPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{270411D9-9832-48D5-BC1C-CE606B00F42E}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "PSFactoryBuffer"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{270411D9-9832-48D5-BC1C-CE606B00F42E}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFrameworkPS.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{27FE144C-9CAD-4EA6-8232-912FE8A96873}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{27FE144C-9CAD-4EA6-8232-912FE8A96873}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{27FE144C-9CAD-4EA6-8232-912FE8A96873}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{27FE144C-9CAD-4EA6-8232-912FE8A96873}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{2A11F42C-3E81-4ad4-9CBE-45579D89671A}",
+  "RequiresFile": "System32\\locationapi.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{2A11F42C-3E81-4ad4-9CBE-45579D89671A}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "CivicAddressReportFactory Class"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{2A11F42C-3E81-4ad4-9CBE-45579D89671A}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\locationapi.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{2A11F42C-3E81-4ad4-9CBE-45579D89671A}\\ProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LocationDisp.CivicAddressReportFactory.1"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{2A11F42C-3E81-4ad4-9CBE-45579D89671A}\\Programmable",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{2A11F42C-3E81-4ad4-9CBE-45579D89671A}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{4486DF98-22A5-4F6B-BD5C-8CADCEC0A6DE}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{2A11F42C-3E81-4ad4-9CBE-45579D89671A}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{2A11F42C-3E81-4ad4-9CBE-45579D89671A}\\VersionIndependentProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LocationDisp.CivicAddressReportFactory"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{2DE967D6-9BE7-458A-9B1C-6D3A6FF425F8}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{2DE967D6-9BE7-458A-9B1C-6D3A6FF425F8}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{2DE967D6-9BE7-458A-9B1C-6D3A6FF425F8}\\InProcServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "ExpandString",
+      "Data": "%SystemRoot%\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{2DE967D6-9BE7-458A-9B1C-6D3A6FF425F8}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{331E9F3D-9351-4A4D-A2CA-75A16BAFF7BB}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{331E9F3D-9351-4A4D-A2CA-75A16BAFF7BB}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{331E9F3D-9351-4A4D-A2CA-75A16BAFF7BB}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{331E9F3D-9351-4A4D-A2CA-75A16BAFF7BB}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{3A582F0C-9A06-43C3-BB82-7CEEED538DF7}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{3A582F0C-9A06-43C3-BB82-7CEEED538DF7}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{3A582F0C-9A06-43C3-BB82-7CEEED538DF7}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{3A582F0C-9A06-43C3-BB82-7CEEED538DF7}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{3BF2A5F1-C95E-4F7B-B939-582DB5F32B81}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{3BF2A5F1-C95E-4F7B-B939-582DB5F32B81}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{3BF2A5F1-C95E-4F7B-B939-582DB5F32B81}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{3BF2A5F1-C95E-4F7B-B939-582DB5F32B81}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{4517D557-7ECD-4E88-B330-BE9C95ED9AF6}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{4517D557-7ECD-4E88-B330-BE9C95ED9AF6}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{4517D557-7ECD-4E88-B330-BE9C95ED9AF6}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{4517D557-7ECD-4E88-B330-BE9C95ED9AF6}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{497D141A-7A42-4BB6-B017-863FD4DA36BF}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{497D141A-7A42-4BB6-B017-863FD4DA36BF}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{497D141A-7A42-4BB6-B017-863FD4DA36BF}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{497D141A-7A42-4BB6-B017-863FD4DA36BF}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{49BD2BB3-DFBE-4E01-BF21-7DE89ED09ACD}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{49BD2BB3-DFBE-4E01-BF21-7DE89ED09ACD}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{49BD2BB3-DFBE-4E01-BF21-7DE89ED09ACD}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{49BD2BB3-DFBE-4E01-BF21-7DE89ED09ACD}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}",
+  "RequiresFile": "System32\\LocationFrameworkInternalPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "PSFactoryBuffer"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFrameworkInternalPS.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{4C1D33D1-3161-4A76-9487-2677CD589C11}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{4C1D33D1-3161-4A76-9487-2677CD589C11}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{4C1D33D1-3161-4A76-9487-2677CD589C11}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{4C1D33D1-3161-4A76-9487-2677CD589C11}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{4C596AEC-8544-4082-BA9F-EB0A7D8E65C6}",
+  "RequiresFile": "System32\\locationapi.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{4C596AEC-8544-4082-BA9F-EB0A7D8E65C6}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "CivicAddress Report Class"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{4C596AEC-8544-4082-BA9F-EB0A7D8E65C6}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\locationapi.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{4C596AEC-8544-4082-BA9F-EB0A7D8E65C6}\\ProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LocationDisp.DispCivicAddressReport.1"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{4C596AEC-8544-4082-BA9F-EB0A7D8E65C6}\\Programmable",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{4C596AEC-8544-4082-BA9F-EB0A7D8E65C6}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{4486DF98-22A5-4F6B-BD5C-8CADCEC0A6DE}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{4C596AEC-8544-4082-BA9F-EB0A7D8E65C6}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{4C596AEC-8544-4082-BA9F-EB0A7D8E65C6}\\VersionIndependentProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LocationDisp.DispCivicAddressReport"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{4FB1CE6D-5334-414A-BBBC-F892A47587E3}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{4FB1CE6D-5334-414A-BBBC-F892A47587E3}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{4FB1CE6D-5334-414A-BBBC-F892A47587E3}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{4FB1CE6D-5334-414A-BBBC-F892A47587E3}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{52968F2C-56B5-4078-9898-EA595DCA0A6E}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{52968F2C-56B5-4078-9898-EA595DCA0A6E}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{52968F2C-56B5-4078-9898-EA595DCA0A6E}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{52968F2C-56B5-4078-9898-EA595DCA0A6E}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{56BB05DE-7AFF-49D8-9F54-2D0936D56BF6}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{56BB05DE-7AFF-49D8-9F54-2D0936D56BF6}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{56BB05DE-7AFF-49D8-9F54-2D0936D56BF6}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{56BB05DE-7AFF-49D8-9F54-2D0936D56BF6}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{57756B48-2D36-478F-B4F4-E8C67C5A9454}",
+  "RequiresFile": "System32\\locationapi.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{57756B48-2D36-478F-B4F4-E8C67C5A9454}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{57756B48-2D36-478F-B4F4-E8C67C5A9454}\\InProcServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "ExpandString",
+      "Data": "%SystemRoot%\\System32\\locationapi.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{57756B48-2D36-478F-B4F4-E8C67C5A9454}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{579648D9-94B1-418D-ACC6-AFA17860F320}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{579648D9-94B1-418D-ACC6-AFA17860F320}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{579648D9-94B1-418D-ACC6-AFA17860F320}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{579648D9-94B1-418D-ACC6-AFA17860F320}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{59108A76-472B-4311-A9E0-B6FF399B8C99}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{59108A76-472B-4311-A9E0-B6FF399B8C99}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{59108A76-472B-4311-A9E0-B6FF399B8C99}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{59108A76-472B-4311-A9E0-B6FF399B8C99}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{6833568B-541D-4290-AF22-3AFB73D1447C}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{6833568B-541D-4290-AF22-3AFB73D1447C}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{6833568B-541D-4290-AF22-3AFB73D1447C}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{6833568B-541D-4290-AF22-3AFB73D1447C}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{749962AB-D849-46D5-A39C-75A8307C2C86}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{749962AB-D849-46D5-A39C-75A8307C2C86}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{749962AB-D849-46D5-A39C-75A8307C2C86}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{749962AB-D849-46D5-A39C-75A8307C2C86}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{7A7C3277-8F84-4636-95B2-EBB5507FF77E}",
+  "RequiresFile": "System32\\locationapi.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{7A7C3277-8F84-4636-95B2-EBB5507FF77E}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LatLongReport Class"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{7A7C3277-8F84-4636-95B2-EBB5507FF77E}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\locationapi.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{7A7C3277-8F84-4636-95B2-EBB5507FF77E}\\ProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LocationDisp.DispLatLongReport.1"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{7A7C3277-8F84-4636-95B2-EBB5507FF77E}\\Programmable",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{7A7C3277-8F84-4636-95B2-EBB5507FF77E}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{4486DF98-22A5-4F6B-BD5C-8CADCEC0A6DE}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{7A7C3277-8F84-4636-95B2-EBB5507FF77E}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{7A7C3277-8F84-4636-95B2-EBB5507FF77E}\\VersionIndependentProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LocationDisp.DispLatLongReport"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{7B014A0C-A42A-4268-BFE0-AFCA9745CD53}",
+  "RequiresFile": "System32\\LocationApi.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{7B014A0C-A42A-4268-BFE0-AFCA9745CD53}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{7B014A0C-A42A-4268-BFE0-AFCA9745CD53}\\InProcServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "ExpandString",
+      "Data": "%SystemRoot%\\System32\\LocationApi.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{7B014A0C-A42A-4268-BFE0-AFCA9745CD53}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{815E42F5-B141-45C2-B844-0BDFE9C558E2}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{815E42F5-B141-45C2-B844-0BDFE9C558E2}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{815E42F5-B141-45C2-B844-0BDFE9C558E2}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{815E42F5-B141-45C2-B844-0BDFE9C558E2}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{8AE0163F-EDDD-4B0A-9C61-F7DD8B6137AE}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{8AE0163F-EDDD-4B0A-9C61-F7DD8B6137AE}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{8AE0163F-EDDD-4B0A-9C61-F7DD8B6137AE}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{8AE0163F-EDDD-4B0A-9C61-F7DD8B6137AE}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{8B7FBFE0-5CD7-494a-AF8C-283A65707506}",
+  "RequiresFile": "System32\\locationapi.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{8B7FBFE0-5CD7-494a-AF8C-283A65707506}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "Default Location Class"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{8B7FBFE0-5CD7-494a-AF8C-283A65707506}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\locationapi.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{8B7FBFE0-5CD7-494a-AF8C-283A65707506}\\ProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "DefaultLocationApi.1"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{8B7FBFE0-5CD7-494a-AF8C-283A65707506}\\VersionIndependentProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "DefaultLocationApi"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{8C60ACD5-B217-49D1-97E7-DF350C818CD7}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{8C60ACD5-B217-49D1-97E7-DF350C818CD7}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{8C60ACD5-B217-49D1-97E7-DF350C818CD7}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{8C60ACD5-B217-49D1-97E7-DF350C818CD7}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{8FFE37E7-DDD3-434A-9DEB-1202D1BE31F7}",
+  "RequiresFile": "System32\\LocationApi.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{8FFE37E7-DDD3-434A-9DEB-1202D1BE31F7}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{8FFE37E7-DDD3-434A-9DEB-1202D1BE31F7}\\InProcServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "ExpandString",
+      "Data": "%SystemRoot%\\System32\\LocationApi.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{8FFE37E7-DDD3-434A-9DEB-1202D1BE31F7}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{9B97D384-048C-4e24-926D-DB6F0841C9E4}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{9B97D384-048C-4e24-926D-DB6F0841C9E4}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{9B97D384-048C-4e24-926D-DB6F0841C9E4}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{9B97D384-048C-4e24-926D-DB6F0841C9E4}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{9DCC3CC8-8609-4863-BAD4-03601F4C65E8}",
+  "RequiresFile": "System32\\locationapi.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{9DCC3CC8-8609-4863-BAD4-03601F4C65E8}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LatLongReportFactory Class"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{9DCC3CC8-8609-4863-BAD4-03601F4C65E8}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\locationapi.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{9DCC3CC8-8609-4863-BAD4-03601F4C65E8}\\ProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LocationDisp.LatLongReportFactory.1"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{9DCC3CC8-8609-4863-BAD4-03601F4C65E8}\\Programmable",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{9DCC3CC8-8609-4863-BAD4-03601F4C65E8}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{4486DF98-22A5-4F6B-BD5C-8CADCEC0A6DE}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{9DCC3CC8-8609-4863-BAD4-03601F4C65E8}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{9DCC3CC8-8609-4863-BAD4-03601F4C65E8}\\VersionIndependentProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LocationDisp.LatLongReportFactory"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{A28798CC-730B-41EB-9CA2-74F93E27B99E}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{A28798CC-730B-41EB-9CA2-74F93E27B99E}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{A28798CC-730B-41EB-9CA2-74F93E27B99E}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{A28798CC-730B-41EB-9CA2-74F93E27B99E}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{A29673B0-DE3A-458E-822B-0ECD00D4BCE0}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{A29673B0-DE3A-458E-822B-0ECD00D4BCE0}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{A29673B0-DE3A-458E-822B-0ECD00D4BCE0}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{A29673B0-DE3A-458E-822B-0ECD00D4BCE0}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{A7B9649E-FECE-4AE3-958C-C36B133E937F}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{A7B9649E-FECE-4AE3-958C-C36B133E937F}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{A7B9649E-FECE-4AE3-958C-C36B133E937F}\\InProcServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "ExpandString",
+      "Data": "%SystemRoot%\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{A7B9649E-FECE-4AE3-958C-C36B133E937F}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{A89003D7-25F1-47fd-B504-6B35E7A63A27}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{A89003D7-25F1-47fd-B504-6B35E7A63A27}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{A89003D7-25F1-47fd-B504-6B35E7A63A27}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{A89003D7-25F1-47fd-B504-6B35E7A63A27}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{A961F842-FC8E-4D53-8074-4AB67E8854B4}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{A961F842-FC8E-4D53-8074-4AB67E8854B4}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{A961F842-FC8E-4D53-8074-4AB67E8854B4}\\InProcServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "ExpandString",
+      "Data": "%SystemRoot%\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{A961F842-FC8E-4D53-8074-4AB67E8854B4}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{A9C3BF62-4524-4989-8AA9-DE019D2E551F}",
+  "RequiresFile": "System32\\Geolocation.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{A9C3BF62-4524-4989-8AA9-DE019D2E551F}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "PSFactoryBuffer"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{A9C3BF62-4524-4989-8AA9-DE019D2E551F}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\Geolocation.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Both"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{AADFA891-4F4D-46E6-BF6B-E9A260931A01}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{AADFA891-4F4D-46E6-BF6B-E9A260931A01}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{AADFA891-4F4D-46E6-BF6B-E9A260931A01}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{AADFA891-4F4D-46E6-BF6B-E9A260931A01}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{AB2ECE69-56D9-4F28-B525-DE1B0EE44237}",
+  "RequiresFile": "System32\\locationapi.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{AB2ECE69-56D9-4F28-B525-DE1B0EE44237}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "PSFactoryBuffer"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{AB2ECE69-56D9-4F28-B525-DE1B0EE44237}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\locationapi.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Both"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{B0DC057D-FA13-4CB3-B54D-4CC05E125781}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{B0DC057D-FA13-4CB3-B54D-4CC05E125781}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{B0DC057D-FA13-4CB3-B54D-4CC05E125781}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{B0DC057D-FA13-4CB3-B54D-4CC05E125781}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{B1840AE4-5D39-4B8E-BEDD-82F251A5FF70}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{B1840AE4-5D39-4B8E-BEDD-82F251A5FF70}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{B1840AE4-5D39-4B8E-BEDD-82F251A5FF70}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{B1840AE4-5D39-4B8E-BEDD-82F251A5FF70}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{BD5EB95F-1F8A-4D34-8F1E-C90BC772E64E}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{BD5EB95F-1F8A-4D34-8F1E-C90BC772E64E}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{BD5EB95F-1F8A-4D34-8F1E-C90BC772E64E}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{BD5EB95F-1F8A-4D34-8F1E-C90BC772E64E}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{BFD6E7B9-2FDE-413E-9AC9-52FC8656908C}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{BFD6E7B9-2FDE-413E-9AC9-52FC8656908C}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{BFD6E7B9-2FDE-413E-9AC9-52FC8656908C}\\InProcServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "ExpandString",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{BFD6E7B9-2FDE-413E-9AC9-52FC8656908C}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{C02C9230-46BD-4F89-BDFD-81A2539E2A01}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{C02C9230-46BD-4F89-BDFD-81A2539E2A01}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{C02C9230-46BD-4F89-BDFD-81A2539E2A01}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{C02C9230-46BD-4F89-BDFD-81A2539E2A01}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{C274CC5B-44A9-4093-A686-71F88079C450}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{C274CC5B-44A9-4093-A686-71F88079C450}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{C274CC5B-44A9-4093-A686-71F88079C450}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{C274CC5B-44A9-4093-A686-71F88079C450}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{C86D6E59-E9E6-489B-A6C3-37ED73ADBF5A}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{C86D6E59-E9E6-489B-A6C3-37ED73ADBF5A}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{C86D6E59-E9E6-489B-A6C3-37ED73ADBF5A}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{C86D6E59-E9E6-489B-A6C3-37ED73ADBF5A}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{D1202225-F099-47FE-A965-8A78ABD6DE7D}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{D1202225-F099-47FE-A965-8A78ABD6DE7D}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{D1202225-F099-47FE-A965-8A78ABD6DE7D}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{D1202225-F099-47FE-A965-8A78ABD6DE7D}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{DFC05778-5E71-494B-BE6D-B532038FA397}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{DFC05778-5E71-494B-BE6D-B532038FA397}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{DFC05778-5E71-494B-BE6D-B532038FA397}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{DFC05778-5E71-494B-BE6D-B532038FA397}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{E4E915A9-8344-4F88-9326-2ADC071D4FF6}",
+  "RequiresFile": "System32\\LocationApi.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{E4E915A9-8344-4F88-9326-2ADC071D4FF6}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{E4E915A9-8344-4F88-9326-2ADC071D4FF6}\\InProcServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "ExpandString",
+      "Data": "%SystemRoot%\\System32\\LocationApi.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{E4E915A9-8344-4F88-9326-2ADC071D4FF6}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{E5B8E079-EE6D-4E33-A438-C87F2E959254}",
+  "RequiresFile": "System32\\LocationApi.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{E5B8E079-EE6D-4E33-A438-C87F2E959254}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "Location Class"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{E5B8E079-EE6D-4E33-A438-C87F2E959254}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationApi.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{E5B8E079-EE6D-4E33-A438-C87F2E959254}\\ProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LocationApi.1"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{E5B8E079-EE6D-4E33-A438-C87F2E959254}\\VersionIndependentProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LocationApi"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{EA770D9E-D1C9-454B-99B7-B2F8CDD2482F}",
+  "RequiresFile": "System32\\Geolocation.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{EA770D9E-D1C9-454B-99B7-B2F8CDD2482F}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "Windows.Devices.GeolocationCGeovisitTriggerDetailss Factory"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{EA770D9E-D1C9-454B-99B7-B2F8CDD2482F}\\InProcServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\Geolocation.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Both"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{F074C547-461C-4146-B35A-F1F845AF413B}",
+  "RequiresFile": "System32\\LocationWinPalMisc.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{F074C547-461C-4146-B35A-F1F845AF413B}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{F074C547-461C-4146-B35A-F1F845AF413B}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationWinPalMisc.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{F074C547-461C-4146-B35A-F1F845AF413B}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{F8D0708C-A86F-4CBA-A55A-F2081BD47721}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{F8D0708C-A86F-4CBA-A55A-F2081BD47721}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{F8D0708C-A86F-4CBA-A55A-F2081BD47721}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{F8D0708C-A86F-4CBA-A55A-F2081BD47721}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{181A38F4-6CE6-4edc-8DB0-6E5631963A1E}",
+  "RequiresFile": "SysWOW64\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{181A38F4-6CE6-4edc-8DB0-6E5631963A1E}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{181A38F4-6CE6-4edc-8DB0-6E5631963A1E}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\SysWOW64\\LocationFramework.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{181A38F4-6CE6-4edc-8DB0-6E5631963A1E}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{270411D9-9832-48D5-BC1C-CE606B00F42E}",
+  "RequiresFile": "SysWOW64\\LocationFrameworkPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{270411D9-9832-48D5-BC1C-CE606B00F42E}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "PSFactoryBuffer"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{270411D9-9832-48D5-BC1C-CE606B00F42E}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\SysWOW64\\LocationFrameworkPS.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{2A11F42C-3E81-4ad4-9CBE-45579D89671A}",
+  "RequiresFile": "SysWOW64\\locationapi.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{2A11F42C-3E81-4ad4-9CBE-45579D89671A}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "CivicAddressReportFactory Class"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{2A11F42C-3E81-4ad4-9CBE-45579D89671A}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\SysWOW64\\locationapi.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{2A11F42C-3E81-4ad4-9CBE-45579D89671A}\\ProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LocationDisp.CivicAddressReportFactory.1"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{2A11F42C-3E81-4ad4-9CBE-45579D89671A}\\Programmable",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{2A11F42C-3E81-4ad4-9CBE-45579D89671A}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{4486DF98-22A5-4F6B-BD5C-8CADCEC0A6DE}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{2A11F42C-3E81-4ad4-9CBE-45579D89671A}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{2A11F42C-3E81-4ad4-9CBE-45579D89671A}\\VersionIndependentProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LocationDisp.CivicAddressReportFactory"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}",
+  "RequiresFile": "SysWOW64\\LocationFrameworkInternalPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "PSFactoryBuffer"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\SysWOW64\\LocationFrameworkInternalPS.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{4C596AEC-8544-4082-BA9F-EB0A7D8E65C6}",
+  "RequiresFile": "SysWOW64\\locationapi.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{4C596AEC-8544-4082-BA9F-EB0A7D8E65C6}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "CivicAddress Report Class"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{4C596AEC-8544-4082-BA9F-EB0A7D8E65C6}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\SysWOW64\\locationapi.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{4C596AEC-8544-4082-BA9F-EB0A7D8E65C6}\\ProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LocationDisp.DispCivicAddressReport.1"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{4C596AEC-8544-4082-BA9F-EB0A7D8E65C6}\\Programmable",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{4C596AEC-8544-4082-BA9F-EB0A7D8E65C6}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{4486DF98-22A5-4F6B-BD5C-8CADCEC0A6DE}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{4C596AEC-8544-4082-BA9F-EB0A7D8E65C6}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{4C596AEC-8544-4082-BA9F-EB0A7D8E65C6}\\VersionIndependentProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LocationDisp.DispCivicAddressReport"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{57756B48-2D36-478F-B4F4-E8C67C5A9454}",
+  "RequiresFile": "System32\\locationapi.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{57756B48-2D36-478F-B4F4-E8C67C5A9454}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{57756B48-2D36-478F-B4F4-E8C67C5A9454}\\InProcServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "ExpandString",
+      "Data": "%SystemRoot%\\System32\\locationapi.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{57756B48-2D36-478F-B4F4-E8C67C5A9454}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{7A7C3277-8F84-4636-95B2-EBB5507FF77E}",
+  "RequiresFile": "SysWOW64\\locationapi.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{7A7C3277-8F84-4636-95B2-EBB5507FF77E}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LatLongReport Class"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{7A7C3277-8F84-4636-95B2-EBB5507FF77E}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\SysWOW64\\locationapi.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{7A7C3277-8F84-4636-95B2-EBB5507FF77E}\\ProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LocationDisp.DispLatLongReport.1"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{7A7C3277-8F84-4636-95B2-EBB5507FF77E}\\Programmable",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{7A7C3277-8F84-4636-95B2-EBB5507FF77E}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{4486DF98-22A5-4F6B-BD5C-8CADCEC0A6DE}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{7A7C3277-8F84-4636-95B2-EBB5507FF77E}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{7A7C3277-8F84-4636-95B2-EBB5507FF77E}\\VersionIndependentProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LocationDisp.DispLatLongReport"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{7B014A0C-A42A-4268-BFE0-AFCA9745CD53}",
+  "RequiresFile": "System32\\LocationApi.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{7B014A0C-A42A-4268-BFE0-AFCA9745CD53}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{7B014A0C-A42A-4268-BFE0-AFCA9745CD53}\\InProcServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "ExpandString",
+      "Data": "%SystemRoot%\\System32\\LocationApi.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{7B014A0C-A42A-4268-BFE0-AFCA9745CD53}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{8B7FBFE0-5CD7-494a-AF8C-283A65707506}",
+  "RequiresFile": "SysWOW64\\locationapi.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{8B7FBFE0-5CD7-494a-AF8C-283A65707506}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "Default Location Class"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{8B7FBFE0-5CD7-494a-AF8C-283A65707506}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\SysWOW64\\locationapi.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{8B7FBFE0-5CD7-494a-AF8C-283A65707506}\\ProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "DefaultLocationApi.1"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{8B7FBFE0-5CD7-494a-AF8C-283A65707506}\\VersionIndependentProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "DefaultLocationApi"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{8FFE37E7-DDD3-434A-9DEB-1202D1BE31F7}",
+  "RequiresFile": "System32\\LocationApi.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{8FFE37E7-DDD3-434A-9DEB-1202D1BE31F7}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{8FFE37E7-DDD3-434A-9DEB-1202D1BE31F7}\\InProcServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "ExpandString",
+      "Data": "%SystemRoot%\\System32\\LocationApi.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{8FFE37E7-DDD3-434A-9DEB-1202D1BE31F7}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{9DCC3CC8-8609-4863-BAD4-03601F4C65E8}",
+  "RequiresFile": "SysWOW64\\locationapi.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{9DCC3CC8-8609-4863-BAD4-03601F4C65E8}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LatLongReportFactory Class"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{9DCC3CC8-8609-4863-BAD4-03601F4C65E8}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\SysWOW64\\locationapi.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{9DCC3CC8-8609-4863-BAD4-03601F4C65E8}\\ProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LocationDisp.LatLongReportFactory.1"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{9DCC3CC8-8609-4863-BAD4-03601F4C65E8}\\Programmable",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{9DCC3CC8-8609-4863-BAD4-03601F4C65E8}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{4486DF98-22A5-4F6B-BD5C-8CADCEC0A6DE}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{9DCC3CC8-8609-4863-BAD4-03601F4C65E8}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{9DCC3CC8-8609-4863-BAD4-03601F4C65E8}\\VersionIndependentProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LocationDisp.LatLongReportFactory"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{A9C3BF62-4524-4989-8AA9-DE019D2E551F}",
+  "RequiresFile": "SysWOW64\\Geolocation.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{A9C3BF62-4524-4989-8AA9-DE019D2E551F}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "PSFactoryBuffer"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{A9C3BF62-4524-4989-8AA9-DE019D2E551F}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\SysWOW64\\Geolocation.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Both"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{AB2ECE69-56D9-4F28-B525-DE1B0EE44237}",
+  "RequiresFile": "SysWOW64\\locationapi.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{AB2ECE69-56D9-4F28-B525-DE1B0EE44237}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "PSFactoryBuffer"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{AB2ECE69-56D9-4F28-B525-DE1B0EE44237}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\SysWOW64\\locationapi.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Both"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{E4E915A9-8344-4F88-9326-2ADC071D4FF6}",
+  "RequiresFile": "System32\\LocationApi.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{E4E915A9-8344-4F88-9326-2ADC071D4FF6}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{E4E915A9-8344-4F88-9326-2ADC071D4FF6}\\InProcServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "ExpandString",
+      "Data": "%SystemRoot%\\System32\\LocationApi.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{E4E915A9-8344-4F88-9326-2ADC071D4FF6}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{E5B8E079-EE6D-4E33-A438-C87F2E959254}",
+  "RequiresFile": "SysWOW64\\LocationApi.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{E5B8E079-EE6D-4E33-A438-C87F2E959254}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "Location Class"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{E5B8E079-EE6D-4E33-A438-C87F2E959254}\\InprocServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\SysWOW64\\LocationApi.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Free"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{E5B8E079-EE6D-4E33-A438-C87F2E959254}\\ProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LocationApi.1"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{E5B8E079-EE6D-4E33-A438-C87F2E959254}\\VersionIndependentProgID",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "LocationApi"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-CLSID",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{EA770D9E-D1C9-454B-99B7-B2F8CDD2482F}",
+  "RequiresFile": "SysWOW64\\Geolocation.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{EA770D9E-D1C9-454B-99B7-B2F8CDD2482F}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "Windows.Devices.GeolocationCGeovisitTriggerDetailss Factory"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\CLSID\\{EA770D9E-D1C9-454B-99B7-B2F8CDD2482F}\\InProcServer32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\SysWOW64\\Geolocation.dll"
+     },
+     {
+      "Name": "ThreadingModel",
+      "Type": "String",
+      "Data": "Both"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{033911AC-1A3F-4961-865E-D0E4CA19975B}",
+  "RequiresFile": "System32\\LocationFrameworkPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{033911AC-1A3F-4961-865E-D0E4CA19975B}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "IGnssAdapterGeofence"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{033911AC-1A3F-4961-865E-D0E4CA19975B}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{270411D9-9832-48D5-BC1C-CE606B00F42E}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{033911AC-1A3F-4961-865E-D0E4CA19975B}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "B25DF0F7-46D8-4E0E-A4BF-A0912018BC40"
+     },
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{1F2A01D5-4475-4152-A1BE-0719CD2A9392}",
+  "RequiresFile": "System32\\LocationFrameworkInternalPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{1F2A01D5-4475-4152-A1BE-0719CD2A9392}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationPermissionManagerGlobalEventHandler"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{1F2A01D5-4475-4152-A1BE-0719CD2A9392}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{1F2A01D5-4475-4152-A1BE-0719CD2A9392}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ED45C902-3EE5-4889-A5E1-51C8CFDFCBA3"
+     },
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{2B1417B0-9B69-4F9E-A001-126378B3C05A}",
+  "RequiresFile": "System32\\LocationFrameworkInternalPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{2B1417B0-9B69-4F9E-A001-126378B3C05A}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "IWindowsActionDialog"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{2B1417B0-9B69-4F9E-A001-126378B3C05A}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{2B1417B0-9B69-4F9E-A001-126378B3C05A}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "B25DF0F7-46D8-4E0E-A4BF-A0912018BC40"
+     },
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{36205546-1AB7-4714-A3E9-E874233670DB}",
+  "RequiresFile": "System32\\LocationFrameworkPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{36205546-1AB7-4714-A3E9-E874233670DB}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationOverride"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{36205546-1AB7-4714-A3E9-E874233670DB}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{270411D9-9832-48D5-BC1C-CE606B00F42E}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{36205546-1AB7-4714-A3E9-E874233670DB}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "B25DF0F7-46D8-4E0E-A4BF-A0912018BC40"
+     },
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{3D0423B1-BBD4-4C4A-8F20-DA15228E0F3D}",
+  "RequiresFile": "System32\\LocationFrameworkPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{3D0423B1-BBD4-4C4A-8F20-DA15228E0F3D}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationManager"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{3D0423B1-BBD4-4C4A-8F20-DA15228E0F3D}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{270411D9-9832-48D5-BC1C-CE606B00F42E}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{3D0423B1-BBD4-4C4A-8F20-DA15228E0F3D}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "B25DF0F7-46D8-4E0E-A4BF-A0912018BC40"
+     },
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{3F4D1267-2B57-415A-976F-95904CF38334}",
+  "RequiresFile": "System32\\LocationFrameworkInternalPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{3F4D1267-2B57-415A-976F-95904CF38334}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationSessionInternal"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{3F4D1267-2B57-415A-976F-95904CF38334}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{3F4D1267-2B57-415A-976F-95904CF38334}\\TypeLib",
+    "Values": [
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{49550759-D194-46E0-8F06-7FAD130C2429}",
+  "RequiresFile": "System32\\LocationFrameworkInternalPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{49550759-D194-46E0-8F06-7FAD130C2429}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "IVisitInformationInternal"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{49550759-D194-46E0-8F06-7FAD130C2429}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{49550759-D194-46E0-8F06-7FAD130C2429}\\TypeLib",
+    "Values": [
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{4CA52EEE-1690-4F47-BF00-1AB34A25362B}",
+  "RequiresFile": "System32\\LocationFrameworkPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{4CA52EEE-1690-4F47-BF00-1AB34A25362B}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "IVisitInformation"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{4CA52EEE-1690-4F47-BF00-1AB34A25362B}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{270411D9-9832-48D5-BC1C-CE606B00F42E}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{4CA52EEE-1690-4F47-BF00-1AB34A25362B}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "B25DF0F7-46D8-4E0E-A4BF-A0912018BC40"
+     },
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{5FBE70F3-2F8D-46BC-BA97-28E3E9D51F9C}",
+  "RequiresFile": "System32\\LocationFrameworkPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{5FBE70F3-2F8D-46BC-BA97-28E3E9D51F9C}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "IGeofenceAppBoundary"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{5FBE70F3-2F8D-46BC-BA97-28E3E9D51F9C}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{270411D9-9832-48D5-BC1C-CE606B00F42E}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{5FBE70F3-2F8D-46BC-BA97-28E3E9D51F9C}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "B25DF0F7-46D8-4E0E-A4BF-A0912018BC40"
+     },
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{636C9D7D-A2C3-4647-9E02-E07E87CE1C9E}",
+  "RequiresFile": "System32\\LocationFrameworkPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{636C9D7D-A2C3-4647-9E02-E07E87CE1C9E}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "IVisitClientBoundary"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{636C9D7D-A2C3-4647-9E02-E07E87CE1C9E}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{270411D9-9832-48D5-BC1C-CE606B00F42E}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{636C9D7D-A2C3-4647-9E02-E07E87CE1C9E}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "B25DF0F7-46D8-4E0E-A4BF-A0912018BC40"
+     },
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{6662C4D4-88F6-4E3C-BA1F-ABE29D5F545D}",
+  "RequiresFile": "System32\\LocationFrameworkInternalPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{6662C4D4-88F6-4E3C-BA1F-ABE29D5F545D}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationVenueInformationInternal"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{6662C4D4-88F6-4E3C-BA1F-ABE29D5F545D}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{6662C4D4-88F6-4E3C-BA1F-ABE29D5F545D}\\TypeLib",
+    "Values": [
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{67B89B7E-4003-4f69-AEA6-836C2F605AEA}",
+  "RequiresFile": "System32\\LocationFrameworkPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{67B89B7E-4003-4f69-AEA6-836C2F605AEA}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "IGnssAdapter"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{67B89B7E-4003-4f69-AEA6-836C2F605AEA}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{270411D9-9832-48D5-BC1C-CE606B00F42E}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{67B89B7E-4003-4f69-AEA6-836C2F605AEA}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "B25DF0F7-46D8-4E0E-A4BF-A0912018BC40"
+     },
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{76C23039-0D4B-4340-9A00-731CFE28D79E}",
+  "RequiresFile": "System32\\LocationFrameworkPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{76C23039-0D4B-4340-9A00-731CFE28D79E}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationInformation"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{76C23039-0D4B-4340-9A00-731CFE28D79E}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{270411D9-9832-48D5-BC1C-CE606B00F42E}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{76C23039-0D4B-4340-9A00-731CFE28D79E}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "B25DF0F7-46D8-4E0E-A4BF-A0912018BC40"
+     },
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{77746361-335B-4217-9F7E-96AE01E96958}",
+  "RequiresFile": "System32\\LocationFrameworkPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{77746361-335B-4217-9F7E-96AE01E96958}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationSession"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{77746361-335B-4217-9F7E-96AE01E96958}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{270411D9-9832-48D5-BC1C-CE606B00F42E}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{77746361-335B-4217-9F7E-96AE01E96958}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "B25DF0F7-46D8-4E0E-A4BF-A0912018BC40"
+     },
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{819DA25D-7A97-47B2-B7BC-D07145A4B5B3}",
+  "RequiresFile": "System32\\LocationFrameworkInternalPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{819DA25D-7A97-47B2-B7BC-D07145A4B5B3}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationProviderWiFi"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{819DA25D-7A97-47B2-B7BC-D07145A4B5B3}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{8AC882BE-EDDB-4FC7-9B83-AD43225AF02E}",
+  "RequiresFile": "System32\\LocationFrameworkInternalPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{8AC882BE-EDDB-4FC7-9B83-AD43225AF02E}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationInformationInternal"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{8AC882BE-EDDB-4FC7-9B83-AD43225AF02E}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{8AC882BE-EDDB-4FC7-9B83-AD43225AF02E}\\TypeLib",
+    "Values": [
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{8DE1960D-A748-49AD-8035-325EC3682F30}",
+  "RequiresFile": "System32\\LocationFrameworkInternalPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{8DE1960D-A748-49AD-8035-325EC3682F30}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationProviderGnss"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{8DE1960D-A748-49AD-8035-325EC3682F30}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{A39BD20D-7D2E-4187-80BD-595D6293F58E}",
+  "RequiresFile": "System32\\LocationFrameworkInternalPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{A39BD20D-7D2E-4187-80BD-595D6293F58E}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationProvider"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{A39BD20D-7D2E-4187-80BD-595D6293F58E}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{A8C20AC3-4F66-423A-A1AE-396142818006}",
+  "RequiresFile": "System32\\LocationFrameworkPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{A8C20AC3-4F66-423A-A1AE-396142818006}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationVenueInformation"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{A8C20AC3-4F66-423A-A1AE-396142818006}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{270411D9-9832-48D5-BC1C-CE606B00F42E}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{A8C20AC3-4F66-423A-A1AE-396142818006}\\TypeLib",
+    "Values": [
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{B9C56D3C-62ED-448C-9B95-CEE13B01DC22}",
+  "RequiresFile": "System32\\LocationFrameworkInternalPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{B9C56D3C-62ED-448C-9B95-CEE13B01DC22}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationPermissionManager"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{B9C56D3C-62ED-448C-9B95-CEE13B01DC22}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{B9C56D3C-62ED-448C-9B95-CEE13B01DC22}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ED45C902-3EE5-4889-A5E1-51C8CFDFCBA3"
+     },
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{BB31BCF1-230A-4BEA-ABEF-26A3887F122A}",
+  "RequiresFile": "System32\\LocationFrameworkInternalPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{BB31BCF1-230A-4BEA-ABEF-26A3887F122A}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationManagerInternal"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{BB31BCF1-230A-4BEA-ABEF-26A3887F122A}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{BB31BCF1-230A-4BEA-ABEF-26A3887F122A}\\TypeLib",
+    "Values": [
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{BD3B4CBB-B9B8-4B15-A1EE-A1A02B9CD428}",
+  "RequiresFile": "System32\\LocationFrameworkInternalPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{BD3B4CBB-B9B8-4B15-A1EE-A1A02B9CD428}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationPermissionManagerEventHandler"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{BD3B4CBB-B9B8-4B15-A1EE-A1A02B9CD428}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{BD3B4CBB-B9B8-4B15-A1EE-A1A02B9CD428}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ED45C902-3EE5-4889-A5E1-51C8CFDFCBA3"
+     },
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{E0D94BD9-AF1C-4D49-96A6-9B6A71C26DF7}",
+  "RequiresFile": "System32\\LocationFrameworkInternalPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{E0D94BD9-AF1C-4D49-96A6-9B6A71C26DF7}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationComponentRegistry"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{E0D94BD9-AF1C-4D49-96A6-9B6A71C26DF7}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{E0D94BD9-AF1C-4D49-96A6-9B6A71C26DF7}\\TypeLib",
+    "Values": [
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\Interface\\{EF6AA6FF-601C-4571-AA56-0027F014C042}",
+  "RequiresFile": "System32\\LocationFrameworkInternalPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{EF6AA6FF-601C-4571-AA56-0027F014C042}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationProviderComposite"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\Interface\\{EF6AA6FF-601C-4571-AA56-0027F014C042}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{36205546-1AB7-4714-A3E9-E874233670DB}",
+  "RequiresFile": "SysWOW64\\LocationFrameworkPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{36205546-1AB7-4714-A3E9-E874233670DB}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationOverride"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{36205546-1AB7-4714-A3E9-E874233670DB}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{270411D9-9832-48D5-BC1C-CE606B00F42E}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{36205546-1AB7-4714-A3E9-E874233670DB}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "B25DF0F7-46D8-4E0E-A4BF-A0912018BC40"
+     },
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{3D0423B1-BBD4-4C4A-8F20-DA15228E0F3D}",
+  "RequiresFile": "SysWOW64\\LocationFrameworkPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{3D0423B1-BBD4-4C4A-8F20-DA15228E0F3D}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationManager"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{3D0423B1-BBD4-4C4A-8F20-DA15228E0F3D}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{270411D9-9832-48D5-BC1C-CE606B00F42E}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{3D0423B1-BBD4-4C4A-8F20-DA15228E0F3D}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "B25DF0F7-46D8-4E0E-A4BF-A0912018BC40"
+     },
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{3F4D1267-2B57-415A-976F-95904CF38334}",
+  "RequiresFile": "SysWOW64\\LocationFrameworkInternalPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{3F4D1267-2B57-415A-976F-95904CF38334}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationSessionInternal"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{3F4D1267-2B57-415A-976F-95904CF38334}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{3F4D1267-2B57-415A-976F-95904CF38334}\\TypeLib",
+    "Values": [
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{49550759-D194-46E0-8F06-7FAD130C2429}",
+  "RequiresFile": "SysWOW64\\LocationFrameworkInternalPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{49550759-D194-46E0-8F06-7FAD130C2429}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "IVisitInformationInternal"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{49550759-D194-46E0-8F06-7FAD130C2429}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{49550759-D194-46E0-8F06-7FAD130C2429}\\TypeLib",
+    "Values": [
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{4CA52EEE-1690-4F47-BF00-1AB34A25362B}",
+  "RequiresFile": "SysWOW64\\LocationFrameworkPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{4CA52EEE-1690-4F47-BF00-1AB34A25362B}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "IVisitInformation"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{4CA52EEE-1690-4F47-BF00-1AB34A25362B}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{270411D9-9832-48D5-BC1C-CE606B00F42E}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{4CA52EEE-1690-4F47-BF00-1AB34A25362B}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "B25DF0F7-46D8-4E0E-A4BF-A0912018BC40"
+     },
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{5FBE70F3-2F8D-46BC-BA97-28E3E9D51F9C}",
+  "RequiresFile": "SysWOW64\\LocationFrameworkPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{5FBE70F3-2F8D-46BC-BA97-28E3E9D51F9C}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "IGeofenceAppBoundary"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{5FBE70F3-2F8D-46BC-BA97-28E3E9D51F9C}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{270411D9-9832-48D5-BC1C-CE606B00F42E}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{5FBE70F3-2F8D-46BC-BA97-28E3E9D51F9C}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "B25DF0F7-46D8-4E0E-A4BF-A0912018BC40"
+     },
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{6662C4D4-88F6-4E3C-BA1F-ABE29D5F545D}",
+  "RequiresFile": "SysWOW64\\LocationFrameworkInternalPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{6662C4D4-88F6-4E3C-BA1F-ABE29D5F545D}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationVenueInformationInternal"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{6662C4D4-88F6-4E3C-BA1F-ABE29D5F545D}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{6662C4D4-88F6-4E3C-BA1F-ABE29D5F545D}\\TypeLib",
+    "Values": [
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{76C23039-0D4B-4340-9A00-731CFE28D79E}",
+  "RequiresFile": "SysWOW64\\LocationFrameworkPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{76C23039-0D4B-4340-9A00-731CFE28D79E}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationInformation"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{76C23039-0D4B-4340-9A00-731CFE28D79E}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{270411D9-9832-48D5-BC1C-CE606B00F42E}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{76C23039-0D4B-4340-9A00-731CFE28D79E}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "B25DF0F7-46D8-4E0E-A4BF-A0912018BC40"
+     },
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{77746361-335B-4217-9F7E-96AE01E96958}",
+  "RequiresFile": "SysWOW64\\LocationFrameworkPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{77746361-335B-4217-9F7E-96AE01E96958}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationSession"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{77746361-335B-4217-9F7E-96AE01E96958}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{270411D9-9832-48D5-BC1C-CE606B00F42E}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{77746361-335B-4217-9F7E-96AE01E96958}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "B25DF0F7-46D8-4E0E-A4BF-A0912018BC40"
+     },
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{8AC882BE-EDDB-4FC7-9B83-AD43225AF02E}",
+  "RequiresFile": "SysWOW64\\LocationFrameworkInternalPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{8AC882BE-EDDB-4FC7-9B83-AD43225AF02E}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationInformationInternal"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{8AC882BE-EDDB-4FC7-9B83-AD43225AF02E}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{8AC882BE-EDDB-4FC7-9B83-AD43225AF02E}\\TypeLib",
+    "Values": [
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{A8C20AC3-4F66-423A-A1AE-396142818006}",
+  "RequiresFile": "SysWOW64\\LocationFrameworkPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{A8C20AC3-4F66-423A-A1AE-396142818006}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationVenueInformation"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{A8C20AC3-4F66-423A-A1AE-396142818006}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{270411D9-9832-48D5-BC1C-CE606B00F42E}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{A8C20AC3-4F66-423A-A1AE-396142818006}\\TypeLib",
+    "Values": [
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-Interface",
+  "Root": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{BB31BCF1-230A-4BEA-ABEF-26A3887F122A}",
+  "RequiresFile": "SysWOW64\\LocationFrameworkInternalPS.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{BB31BCF1-230A-4BEA-ABEF-26A3887F122A}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "ILocationManagerInternal"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{BB31BCF1-230A-4BEA-ABEF-26A3887F122A}\\ProxyStubClsId32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{49E9AE53-4547-4045-AAD1-CDC3C6C95D6C}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\WOW6432Node\\Interface\\{BB31BCF1-230A-4BEA-ABEF-26A3887F122A}\\TypeLib",
+    "Values": [
+     {
+      "Name": "Version",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "SystemSettings",
+  "Root": "SOFTWARE\\Microsoft\\SystemSettings\\SettingId\\SystemSettings_Privacy_DefaultLocationButton",
+  "RequiresFile": "System32\\SettingsHandlers_Geolocation.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Microsoft\\SystemSettings\\SettingId\\SystemSettings_Privacy_DefaultLocationButton",
+    "Values": [
+     {
+      "Name": "CollectionId",
+      "Type": "String",
+      "Data": "Privacy"
+     },
+     {
+      "Name": "DllPath",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\SettingsHandlers_Geolocation.dll"
+     },
+     {
+      "Name": "SyncType",
+      "Type": "String",
+      "Data": "None"
+     },
+     {
+      "Name": "Type",
+      "Type": "String",
+      "Data": "Action"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "SystemSettings",
+  "Root": "SOFTWARE\\Microsoft\\SystemSettings\\SettingId\\SystemSettings_Privacy_LocationGeofencingStatus",
+  "RequiresFile": "System32\\SettingsHandlers_Geolocation.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Microsoft\\SystemSettings\\SettingId\\SystemSettings_Privacy_LocationGeofencingStatus",
+    "Values": [
+     {
+      "Name": "CollectionId",
+      "Type": "String",
+      "Data": "Privacy"
+     },
+     {
+      "Name": "DllPath",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\SettingsHandlers_Geolocation.dll"
+     },
+     {
+      "Name": "SyncType",
+      "Type": "String",
+      "Data": "None"
+     },
+     {
+      "Name": "Type",
+      "Type": "String",
+      "Data": "DisplayString"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "SystemSettings",
+  "Root": "SOFTWARE\\Microsoft\\SystemSettings\\SettingId\\SystemSettings_Privacy_LocationHistoryClear",
+  "RequiresFile": "System32\\SettingsHandlers_Geolocation.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Microsoft\\SystemSettings\\SettingId\\SystemSettings_Privacy_LocationHistoryClear",
+    "Values": [
+     {
+      "Name": "CollectionId",
+      "Type": "String",
+      "Data": "Privacy"
+     },
+     {
+      "Name": "DllPath",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\SettingsHandlers_Geolocation.dll"
+     },
+     {
+      "Name": "SyncType",
+      "Type": "String",
+      "Data": "None"
+     },
+     {
+      "Name": "Type",
+      "Type": "String",
+      "Data": "Action"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "SystemSettings",
+  "Root": "SOFTWARE\\Microsoft\\SystemSettings\\SettingId\\SystemSettings_Privacy_LocationIcon",
+  "RequiresFile": "System32\\SettingsHandlers_Geolocation.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Microsoft\\SystemSettings\\SettingId\\SystemSettings_Privacy_LocationIcon",
+    "Values": [
+     {
+      "Name": "CollectionId",
+      "Type": "String",
+      "Data": "Privacy"
+     },
+     {
+      "Name": "DllPath",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\SettingsHandlers_Geolocation.dll"
+     },
+     {
+      "Name": "SyncType",
+      "Type": "String",
+      "Data": "None"
+     },
+     {
+      "Name": "Type",
+      "Type": "String",
+      "Data": "Custom"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "SystemSettings",
+  "Root": "SOFTWARE\\Microsoft\\SystemSettings\\SettingId\\SystemSettings_Privacy_LocationIconEnabled",
+  "RequiresFile": "System32\\SettingsHandlers_Geolocation.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Microsoft\\SystemSettings\\SettingId\\SystemSettings_Privacy_LocationIconEnabled",
+    "Values": [
+     {
+      "Name": "CollectionId",
+      "Type": "String",
+      "Data": "Privacy"
+     },
+     {
+      "Name": "DllPath",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\SettingsHandlers_Geolocation.dll"
+     },
+     {
+      "Name": "SyncType",
+      "Type": "String",
+      "Data": "BackupOnly"
+     },
+     {
+      "Name": "Type",
+      "Type": "String",
+      "Data": "Boolean"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-LocalService",
+  "Root": "SOFTWARE\\Classes\\CLSID\\{08D9DFDF-C6F7-404A-A20F-66EEC0A609CD}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{08D9DFDF-C6F7-404A-A20F-66EEC0A609CD}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "lfsvc"
+     },
+     {
+      "Name": "AppID",
+      "Type": "String",
+      "Data": "{020FB939-2C8B-4DB7-9E90-9527966E38E5}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{08D9DFDF-C6F7-404A-A20F-66EEC0A609CD}\\TypeLib",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "{B25DF0F7-46D8-4E0E-A4BF-A0912018BC40}"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\CLSID\\{08D9DFDF-C6F7-404A-A20F-66EEC0A609CD}\\Version",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "1.0"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-AppID",
+  "Root": "SOFTWARE\\Classes\\AppID\\{020FB939-2C8B-4DB7-9E90-9527966E38E5}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\AppID\\{020FB939-2C8B-4DB7-9E90-9527966E38E5}",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "lfsvc"
+     },
+     {
+      "Name": "AccessPermission",
+      "Type": "Binary",
+      "Data": "01001480f000000000010000140000003000000002001c000100000011001400040000000101000000000010001000000200c00008000000000014000300000001010000000000050a0000000000140003000000010100000000000100000000000014000300000001010000000000051200000000001800030000000102000000000005200000002002000000001400230000000101000000000005040000000000180023000000010200000000000f02000000010000000000240003000000010500000000000f03000000e494a7bf64f9db4f90f651056bfe4b4400001400030000000101000000000005130000000102000000000005200000002002000001020000000000052000000020020000"
+     },
+     {
+      "Name": "LaunchPermission",
+      "Type": "Binary",
+      "Data": "01001480dc000000ec000000140000003000000002001c000100000011001400040000000101000000000010001000000200ac0007000000000014000b000000010100000000000100000000000014000b000000010100000000000512000000000018000b00000001020000000000052000000020020000000014006b000000010100000000000504000000000018006b000000010200000000000f0200000001000000000024000b000000010500000000000f03000000e494a7bf64f9db4f90f651056bfe4b44000014000b0000000101000000000005130000000102000000000005200000002002000001020000000000052000000020020000"
+     },
+     {
+      "Name": "LocalService",
+      "Type": "String",
+      "Data": "lfsvc"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "Group": "COM-TypeLib",
+  "Root": "SOFTWARE\\Classes\\TypeLib\\{B25DF0F7-46D8-4E0E-A4BF-A0912018BC40}",
+  "RequiresFile": "System32\\LocationFramework.dll",
+  "Keys": [
+   {
+    "Path": "SOFTWARE\\Classes\\TypeLib\\{B25DF0F7-46D8-4E0E-A4BF-A0912018BC40}",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\TypeLib\\{B25DF0F7-46D8-4E0E-A4BF-A0912018BC40}\\1.0",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "Windows Geolocation Service, v1.0"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\TypeLib\\{B25DF0F7-46D8-4E0E-A4BF-A0912018BC40}\\1.0\\0",
+    "Values": []
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\TypeLib\\{B25DF0F7-46D8-4E0E-A4BF-A0912018BC40}\\1.0\\0\\win32",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\SysWOW64\\LocationFramework.dll"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\TypeLib\\{B25DF0F7-46D8-4E0E-A4BF-A0912018BC40}\\1.0\\0\\win64",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "X:\\Windows\\System32\\LocationFramework.dll"
+     }
+    ]
+   },
+   {
+    "Path": "SOFTWARE\\Classes\\TypeLib\\{B25DF0F7-46D8-4E0E-A4BF-A0912018BC40}\\1.0\\FLAGS",
+    "Values": [
+     {
+      "Name": "",
+      "Type": "String",
+      "Data": "0"
+     }
+    ]
+   }
+  ]
+ }
+]

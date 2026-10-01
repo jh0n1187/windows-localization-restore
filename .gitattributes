@@ -1,0 +1,10 @@
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+*.md  text eol=crlf
+*.csv text eol=crlf
+*.json text eol=crlf
+# exportacoes do regedit sao UTF-16 LE
+*.reg binary
+*.dll binary
+*.exe binary
+*.mui binary
