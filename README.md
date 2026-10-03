@@ -1,21 +1,13 @@
 # Restore-Location — kit de reparo do Windows Location (lfsvc)
 
 Kit reutilizável para restaurar o **Serviço de Geolocalização (`lfsvc`)** e a pilha de localização do
-Windows 10 em instalações modificadas/"debloated". Depois de montado, não depende de ISO, `install.wim`, DISM ou internet:
-tudo que é necessário está em `Profiles\<perfil>\Files\` e `Registry\`.
+Windows 10 em instalações modificadas/"debloated". **O kit é autossuficiente**: não depende de ISO, `install.wim`, DISM,
+internet nem de programa instalado — tudo que é necessário está em `Profiles\<perfil>\` (`Files\`, `Registry\`, `Tasks\`,
+`Catalogs\`) e vai junto no repositório.
 
-> **Binários não incluídos no repositório.** Os 15 arquivos de `Profiles\Win10-19041\Files\` são binários da Microsoft
-> e não podem ser redistribuídos aqui. O repositório traz o `manifest.csv` (caminho, versão e SHA256 de cada um) e o script
-> `Scripts\Build-KitFiles.ps1`, que os copia de uma imagem **oficial** do Windows 10 e valida cada hash — uma vez só:
->
-> ```powershell
-> # como Administrador, com a ISO do Windows 10 22H2 (arquivos 10.0.19041.3636) montada em D:
-> .\Scripts\Build-KitFiles.ps1 -Wim D:\sources\install.wim            # lista os índices
-> .\Scripts\Build-KitFiles.ps1 -Wim D:\sources\install.wim -Index 6   # ex.: Windows 10 Pro
-> ```
-> Arquivo com hash diferente não é copiado (a imagem precisa ser da mesma versão do manifest). Os `.mui` exigem imagem pt-BR.
-> Sem os binários, o kit continua funcionando em máquinas que ainda têm os arquivos (só a etapa A de arquivos fica indisponível),
-> e funciona por completo no Windows 11 (perfil parcial, não usa binários).
+> Os binários de `Profiles\Win10-19041\Files\` são arquivos originais da Microsoft (10.0.19041.x, extraídos da mídia oficial
+> do Windows 10 22H2 pt-BR); o `manifest.csv` traz caminho, versão e SHA256 de cada um e o kit confere o hash antes de copiar.
+> No Windows 11 o perfil é parcial e não usa binários.
 
 ---
 
@@ -27,7 +19,7 @@ Na máquina a reparar, copie a pasta `C:\Restore-Location` e dê **duplo clique 
 
 | Etapa | Script | Executa somente se… |
 |---|---|---|
-| A | `Restore-Location.ps1` | faltar algum arquivo, a configuração do `lfsvc`/`netsvcs` ou algum registro COM |
+| A | `Restore-Location.ps1` | faltar algum arquivo, a configuração do `lfsvc`/`netsvcs`, algum registro COM/WinRT/sistema, catálogo de assinatura ou tarefa agendada de localização |
 | B | `Enable-LocationPolicy.ps1` | ConsentStore ≠ Allow (dispositivo/usuário/apps desktop) ou `lfsvc\Service\Configuration\Status` ≠ 1 |
 | C | `Remove-LocationPolicies.ps1` | existir política de localização/sensores (`LocationAndSensors`, `LetAppsAccessLocation*`, PolicyManager `AllowLocation`) |
 | D | `Verify-Location.ps1 -Functional` | sempre (somente leitura) |
@@ -124,7 +116,9 @@ forem `true`, os respectivos `Files\manifest.csv` + binários e `Registry\lfsvc-
 
 ## 3. Arquivos removidos pelo debloat e restaurados
 
-Origem: `install-pro.wim` (Windows 10 Pro pt-BR, build 19041.3636). Todos validados por SHA256 (`Profiles\Win10-19041\Files\manifest.csv`).
+Origem: imagem original do Windows 10 Pro pt-BR (arquivos 10.0.19041.3636; idênticos byte a byte aos da ISO 22H2 19045.3803).
+Todos validados por SHA256 (`Profiles\Win10-19041\Files\manifest.csv`). A lista foi conferida contra os manifestos WinSxS dos
+componentes `Microsoft-Windows-Geolocation-*`, `MobilePC-Location-API` e `SettingsHandlers-Geolocation` da imagem.
 
 | Grupo | Arquivo | Versão | Função |
 |---|---|---|---|
@@ -133,11 +127,21 @@ Origem: `install-pro.wim` (Windows 10 Pro pt-BR, build 19041.3636). Todos valida
 | 2 | `System32\pt-BR\lfsvc.dll.mui`, `System32\pt-BR\locationframework.dll.mui` | 19041.1 | nome/descrição/recursos pt-BR |
 | 3 | `System32\LocationWinPalMisc.dll`, `System32\LocationApi.dll`, `System32\LocationFrameworkPS.dll`, `System32\LocationFrameworkInternalPS.dll` | 19041.3636 | componentes, Location API (Win32/.NET), proxies COM |
 | 3 | `SysWOW64\LocationApi.dll`, `SysWOW64\LocationFrameworkPS.dll`, `SysWOW64\LocationFrameworkInternalPS.dll` | 19041.3636 | idem para processos 32-bit |
+| 3 | `System32\Geolocation.dll` (+ `pt-BR\Geolocation.dll.mui`), `SysWOW64\Geolocation.dll` | 19041.3636 | WinRT `Windows.Devices.Geolocation` (apps e navegadores 64 e 32-bit) |
 | 4 | `System32\SettingsHandlers_Geolocation.dll` (+ `.mui`), `System32\LocationNotificationWindows.exe` (+ `.mui`) | 19041.x | página de Configurações e ícone "localização em uso" |
-| 9 (opcional) | `SysWOW64\Geolocation.dll` | 19041.3636 | WinRT Geolocation para apps 32-bit (não aplicado por padrão) |
+| 4 | `System32\WindowsActionDialog.exe` (+ `.mui`) | 19041.3636 | diálogo de ação de localização (tarefa `Location\WindowsActionDialog`) |
+| 9 (opcional) | `PolicyDefinitions\LocationProviderAdm.admx` (+ `pt-BR\...adml`) | — | modelo de política do gpedit (só com `-IncludeOptional`) |
 
-Arquivos **preservados** (já existiam, versões mais novas do sistema): `Geolocation.dll` (19041.6033),
+Arquivos **preservados** quando já existem (versões mais novas do sistema): `System32\Geolocation.dll` (19041.6033 na VM de teste),
 `SetNetworkLocation*.dll`, `CapabilityAccessManager*.dll`, `SensorService.dll` etc.
+
+**Catálogos de assinatura** (`Profiles\Win10-19041\Catalogs\`, 6 arquivos `.cat`): os binários acima não têm assinatura embutida;
+só são reconhecidos como assinados pela Microsoft se o catálogo do pacote deles estiver registrado. A etapa A registra os
+catálogos ausentes (`CryptCATAdminAddCatalog`), e os arquivos restaurados passam de `NotSigned` a `Valid`.
+
+**Tarefas agendadas** (`Profiles\Win10-19041\Tasks\`): `\Microsoft\Windows\Location\Notifications` (gatilho WNF; é ela que
+inicia o `LocationNotificationWindows.exe` — sem a tarefa o ícone "localização em uso" nunca aparece) e
+`\Microsoft\Windows\Location\WindowsActionDialog`. Registradas somente se ausentes e se o executável existir.
 
 Ausentes, mas **fora do kit** (não fazem parte da cadeia do `lfsvc`): `cldapi.dll`, `MdmCommon.dll`, `SensorsApi.dll`, `sensrsvc.dll`.
 
@@ -150,6 +154,9 @@ Ausentes, mas **fora do kit** (não fazem parte da cadeia do `lfsvc`): `cldapi.d
 | 78 CLSIDs + 36 Interfaces COM de Location | cria **somente chaves/valores ausentes**; nunca altera valor existente; só aplica se o DLL referenciado existir; `X:\Windows` → `%SystemRoot%` real | `Profiles\Win10-19041\Registry\location-registry.json` |
 | 5 `SystemSettings\SettingId\SystemSettings_Privacy_*Location*` | criados **somente se ausentes**, com `SeRestorePrivilege` (chave protegida pelo TrustedInstaller; dono/ACL **não** alterados — a chave herda a ACL do pai); rollback por `Rollback-Location -RemoveCreatedRegistry` (`PKEY`/`PVAL` em `created-registry.txt`) | `Profiles\Win10-19041\Registry\location-registry.json` |
 | CLSID `{08D9DFDF…}` "lfsvc" + AppID `{020FB939…}` (LocalService/permissões) + TypeLib `{B25DF0F7…}` | cria somente se ausentes | `Profiles\Win10-19041\Registry\location-registry.json` |
+| Location API clássica (`LocationApi.dll`): ProgIDs `LocationApi`, `DefaultLocationApi`, `LocationDisp.*`, interfaces (proxy/stub) e TypeLib `{4486DF98…}`, x64 e WOW64 | cria somente chaves/valores ausentes (privilégio de restauração; dono/ACL inalterados). Sem elas `New-Object -ComObject LocationDisp.LatLongReportFactory` falha com 0x80040154 | `location-registry.json` (entradas `"Source":"manifest"`) |
+| WinRT `Windows.Devices.Geolocation.*` (ActivatableClassId, CLSID, interfaces), x64 e **WOW6432Node** (apps 32-bit) | idem | idem |
+| Sistema: notificação `Windows.SystemToast.LocationManager`, BackgroundModel (brokers e `EventSettings` 150/600 = geofence), fonte `EventLog\System\Lfsvc`, publisher/canal de eventos `{4d13548f…}`, CSP SUPL, definições de capability/política de localização | idem | idem |
 | Privacidade (ConsentStore = Allow no dispositivo e em **todos os perfis + Default**; `lfsvc\Service\Configuration\Status = 1`) | `Scripts\Enable-LocationPolicy.ps1`, com backup e `-Revert` | — |
 | Políticas de localização/sensores do debloat | **removidas** por `Scripts\Remove-LocationPolicies.ps1`, com backup e `-Revert` | — |
 
@@ -174,8 +181,8 @@ cd C:\Restore-Location\Scripts
 Sem digitar comandos: duplo clique em `Scripts\Run-AsAdmin.cmd` (auto-eleva, executa `Scripts\Pending-Step.ps1`
 = Restore + Verify, grava `Logs\Pending-Step-last.log`).
 
-Parâmetros úteis do `Restore-Location.ps1`: `-Group 0,1` (restauração gradual), `-IncludeOptional` (grupo 9),
-`-SkipComRegistry`, `-NoServiceTest`.
+Parâmetros úteis do `Restore-Location.ps1`: `-Group 0,1` (restauração gradual), `-IncludeOptional` (grupo 9: modelo ADMX),
+`-SkipComRegistry`, `-NoServiceTest`. Com `-WhatIf` nada é alterado, mas o log `Logs\Restore-<ts>.log` é gravado.
 
 O script: exige Administrador e PowerShell 64-bit; valida Windows 10 build 19041–19045 x64; cria backup em
 `Backup\<timestamp>\`; valida o SHA256 de cada arquivo do kit; **nunca sobrescreve** arquivo existente;
@@ -192,11 +199,11 @@ aplica ACL/owner (TrustedInstaller) iguais aos binários do sistema; testa o ser
 ## 7. Rollback
 
 Cada execução **que altera algo** grava em `Backup\<timestamp>\` (execuções sem alteração descartam o próprio backup): exports de registro, `netsvcs-before.txt`, `files-before.csv`,
-`created-files.txt` e `created-registry.txt`.
+`created-files.txt`, `created-registry.txt` e `changes.txt` (inclui as linhas `TASK`/`CATALOG` do que foi registrado).
 
 ```powershell
 .\Rollback-Location.ps1 -BackupFolder C:\Restore-Location\Backup\<timestamp> -WhatIf
-.\Rollback-Location.ps1 -BackupFolder C:\Restore-Location\Backup\<timestamp> -RemoveCreatedRegistry
+.\Rollback-Location.ps1 -BackupFolder C:\Restore-Location\Backup\<timestamp> -RemoveCreatedRegistry -RemoveTasksAndCatalogs
 .\Enable-LocationPolicy.ps1 -Revert          # desfaz a liberação de privacidade (ConsentStore/Status)
 .\Remove-LocationPolicies.ps1 -Revert       # reimporta as políticas removidas
 ```
@@ -208,7 +215,7 @@ que o próprio kit criou. Para desfazer uma restauração feita em vários passo
 
 | Sistema | Resultado |
 |---|---|
-| Windows 10 Pro 22H2 **19045.6811** x64 pt-BR (VM, debloated) | `lfsvc` RUNNING estável, inclusive após reinicialização; reexecução do Restore sem alterações e sem erros (idempotente); Verify **PASS (com avisos)**; teste funcional `Permission=Granted` com latitude/longitude; Chrome (browserleaks.com/geo) obtém a posição |
+| Windows 10 Pro 22H2 **19045.6811** x64 pt-BR (VM, debloated) | `lfsvc` RUNNING estável, inclusive após reinicialização; reexecução sem alterações e sem erros (idempotente); resultado **SUCESSO**, Verify **PASS** sem avisos (todos os binários `sig=Valid`, tarefas e catálogos registrados); teste funcional `Permission=Granted` com latitude/longitude; `LocationDisp.LatLongReportFactory` e WinRT `Geolocator` ativam em processos 64 e 32-bit; Chrome (browserleaks.com/geo) obtém a posição |
 
 Binários do kit: 10.0.19041.1 / 10.0.19041.3636 (compatíveis com 2004/20H2/21H1/21H2/22H2 — builds 19041–19045).
 Outras builds são recusadas pelo script.
@@ -221,8 +228,11 @@ Outras builds são recusadas pelo script.
   do histórico, status de geofencing) dependem de chaves em `SystemSettings\SettingId`, protegida pelo TrustedInstaller.
   Sem elas, os botões aparecem como **barras cinzas vazias**. A etapa A cria essas chaves com o privilégio de
   restauração (`SeRestorePrivilege`), sem tomar posse nem alterar ACL. **Feche e reabra Configurações** depois.
-- **Assinatura**: os binários 19041.x restaurados aparecem como `NotSigned` porque o catálogo daquela build não está
-  instalado no sistema 19045.6811; a integridade é garantida por SHA256.
+- **Assinatura**: os binários restaurados só aparecem como `Valid` depois que a etapa A registra os catálogos do perfil
+  (`Catalogs\*.cat`); se o registro de um catálogo falhar (aviso no log), o arquivo fica `NotSigned`, mas a integridade
+  continua garantida por SHA256.
+- **`Control\WMI\Security`**: o descritor de segurança do provedor de eventos é criado só se ausente; os demais valores
+  dessa chave não são tocados.
 - **Atualizações**: os arquivos restaurados não estão registrados no Component Store (WinSxS/CBS) — o Windows Update
   não os atualizará. Eles permanecem na versão 19041.3636.
 - **Idioma**: o kit contém apenas recursos **pt-BR**. Em outros idiomas os binários funcionam, mas nome/descrição do
@@ -246,8 +256,9 @@ sc.exe queryex lfsvc                 # STATE: 4 RUNNING, WIN32_EXIT_CODE 0
 .\Verify-Location.ps1 -Functional    # Overall: PASS
 ```
 
-Critério: `Files`, `lfsvc registry`, `ServiceDll`, `netsvcs`, `COM registry`, `Service registration`,
-`Service start` = PASS. Avisos (WARN) de política/privacidade/Configurações são informativos.
+Critério: `Files`, `lfsvc registry`, `ServiceDll`, `netsvcs`, `COM registry` (inclui ProgIDs, interfaces, TypeLib e WinRT),
+`Service registration`, `Service start` = PASS. Avisos (WARN) de política/privacidade/Configurações, `System registry`,
+`Scheduled tasks` e `Signature catalogs` são informativos (não impedem a localização de funcionar).
 
 ## Estrutura do kit
 
@@ -255,15 +266,22 @@ Critério: `Files`, `lfsvc registry`, `ServiceDll`, `netsvcs`, `COM registry`, `
 C:\Restore-Location\
   REPARAR-E-HABILITAR.cmd      lancador de 1 clique (diagnostica + executa so o necessario)
   Profiles\
-    Win10-19041\  profile.json, Files\ (binarios + manifest.csv SHA256), Registry\ (lfsvc-restaurar.reg, location-registry.json)
+    Win10-19041\  profile.json
+                  Files\     binarios + manifest.csv (SHA256)
+                  Registry\  lfsvc-restaurar.reg, location-registry.json, location-tasks.json
+                  Tasks\     XML das tarefas agendadas \Microsoft\Windows\Location\*
+                  Catalogs\  catalogos de assinatura (.cat) dos pacotes que contem os binarios
     Win11\        profile.json (perfil parcial: consentimento + remocao de politicas)
   Scripts\     KitProfile.ps1, Repair-And-Enable.ps1, Restore-Location.ps1, Enable-LocationPolicy.ps1,
                Remove-LocationPolicies.ps1, Verify-Location.ps1, Rollback-Location.ps1, Check-UserLocation.ps1,
-               Build-KitFiles.ps1 (monta Files\ a partir do install.wim), Run-AsAdmin.cmd, Cleanup-Kit.ps1
-  Backup\  Logs\  gerados em cada maquina
+               Run-AsAdmin.cmd, Pending-Step.ps1
+  Backup\  Logs\  gerados em cada maquina (fora do repositorio)
 ```
 
 Para levar a outra máquina, copie `REPARAR-E-HABILITAR.cmd`, `Profiles\`, `Scripts\` e este README.
-A limpeza (`Scripts\Cleanup-Kit.ps1 -IncludeExternal`) removeu as extrações e cópias temporárias, o `install-pro.wim` e as
-ferramentas que dependiam dele. Para criar um **novo perfil** (ex.: Win11 completo) será preciso um `install.wim` do mesmo build
-e repetir a extração/análise (diagnóstico PE + comparação do hive `SOFTWARE`), como descrito nas seções 2–4.
+
+As ferramentas de desenvolvimento **não fazem parte do kit** (dependem de uma ISO/`install.esd` original e do 7-Zip):
+`Extract-Image.ps1` extrai da imagem os manifestos WinSxS, os hives e os catálogos, e `Build-LocationProfile.ps1` gera a partir
+deles os arquivos, as entradas `"Source":"manifest"` do `location-registry.json`, as tarefas e os catálogos do perfil. Para criar
+um **novo perfil** (ex.: Win11 completo) é preciso uma imagem do mesmo build e repetir esse processo, além do diagnóstico PE e da
+comparação do hive `SOFTWARE` descritos nas seções 2–4.

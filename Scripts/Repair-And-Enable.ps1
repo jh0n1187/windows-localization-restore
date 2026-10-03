@@ -5,7 +5,8 @@
   depois executa SOMENTE as etapas necessarias.
 
   Etapas possiveis (cada uma so roda se o diagnostico apontar necessidade):
-    A) Restore-Location.ps1        - arquivos ausentes, registro do lfsvc/netsvcs, registro COM ausente
+    A) Restore-Location.ps1        - arquivos ausentes, registro do lfsvc/netsvcs, registro COM/WinRT ausente,
+                                     catalogos de assinatura e tarefas agendadas de localizacao
     B) Enable-LocationPolicy.ps1   - ConsentStore (Allow) e estado do dispositivo (Status=1);
                                      parte por usuario em TODOS os perfis + perfil modelo Default (novos usuarios)
     C) Remove-LocationPolicies.ps1 - politicas de localizacao/sensores do debloat
@@ -24,6 +25,7 @@ $ErrorActionPreference = 'Continue'
 Set-Location $PSScriptRoot
 $KitRoot = Split-Path $PSScriptRoot -Parent
 $hist = Join-Path $KitRoot 'Logs\Repair-History.log'
+New-Item -ItemType Directory -Path (Join-Path $KitRoot 'Logs') -Force | Out-Null
 function Hist([string]$m) { "[{0}] {1}" -f (Get-Date -Format 's'), $m | Out-File $hist -Append -Encoding UTF8 }
 
 # ---- status final (sempre a ultima coisa no log)
@@ -110,21 +112,35 @@ if ($KF.ComRegistry) {
         }
         $bad = $false
         foreach ($k in $e.Keys) {
-            $r = $hk.OpenSubKey($k.Path); if (-not $r) { $bad = $true; break }
+            $r = $null; try { $r = $hk.OpenSubKey($k.Path) } catch { continue }   # chave existe mas nao pode ser lida: nao conta como ausente
+            if (-not $r) { $bad = $true; break }
             foreach ($v in @($k.Values)) { if ($null -eq $r.GetValue([string]$v.Name, $null, 'DoNotExpandEnvironmentNames')) { $bad = $true } }
             $r.Close(); if ($bad) { break }
         }
         if ($bad) { $comMissing[$e.Group] = 1 + [int]$comMissing[$e.Group] }
     }
-    foreach ($g in 'COM-CLSID','COM-Interface','COM-LocalService','COM-AppID','COM-TypeLib','SystemSettings') {
-        F $(if ($g -eq 'SystemSettings') { 'Configuracoes' } else { 'Registro COM' }) ("{0}{1}" -f $g, $(if ($comMissing[$g]) { " ($($comMissing[$g]) ausente(s))" })) (-not $comMissing[$g]) 'A'
+    # grupos: COM-* (classes, interfaces, ProgIDs, TypeLib), WinRT (Windows.Devices.Geolocation), Sistema (notificacoes,
+    # BackgroundModel, log de eventos, definicoes de capability/politica), SystemSettings (controles da pagina Configuracoes)
+    foreach ($g in @($entries | ForEach-Object { $_.Group } | Select-Object -Unique)) {
+        $area = switch -Wildcard ($g) { 'SystemSettings' { 'Configuracoes' } 'COM-*' { 'Registro COM' } default { 'Registro' } }
+        F $area ("{0}{1}" -f $g, $(if ($comMissing[$g]) { " ($($comMissing[$g]) ausente(s))" })) (-not $comMissing[$g]) 'A'
     }
 } else {
     # perfil sem dados COM: apenas diagnostica a classe COM "lfsvc" (ponte WinRT -> servico)
     F 'Registro COM' 'Classe COM lfsvc {08D9DFDF...} + AppID {020FB939...}' ((Test-Path 'HKLM:\SOFTWARE\Classes\CLSID\{08D9DFDF-C6F7-404A-A20F-66EEC0A609CD}') -and (Test-Path 'HKLM:\SOFTWARE\Classes\AppID\{020FB939-2C8B-4DB7-9E90-9527966E38E5}')) 'A' $false
 }
+# A4) tarefas agendadas e catalogos de assinatura (somente perfis que os trazem)
+if ($KF.Files) {
+    foreach ($t in @(Get-KitTaskState $KP)) {
+        # sem o executavel a tarefa nao se aplica - a menos que a etapa A va restaura-lo
+        if (-not $t.Applicable -and -not ($manifest | Where-Object { $_.RelPath -ieq $t.RequiresFile })) { continue }
+        F 'Tarefa' ("{0}{1}" -f $t.TaskPath, $t.TaskName) $t.Ok 'A'
+    }
+    $catSt = @(Get-KitCatalogState $KP)
+    if ($catSt.Count) { $catMiss = @($catSt | Where-Object { -not $_.Ok }).Count; F 'Assinatura' ("catalogos dos binarios registrados{0}" -f $(if ($catMiss) { " ($catMiss de $($catSt.Count) ausente(s))" })) (-not $catMiss) 'A' }
+}
 # B) privacidade / estado do dispositivo
-$cam = 'SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location'
+$cam ='SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location'
 F 'Privacidade' 'Dispositivo (HKLM ConsentStore) = Allow' ((Get-ItemProperty "HKLM:\$cam" -ErrorAction SilentlyContinue).Value -eq 'Allow') 'B'
 # por usuario: TODOS os perfis existentes + perfil modelo Default (usuarios novos)
 $userStates = @(Get-KitUserLocationState)

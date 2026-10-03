@@ -9,6 +9,9 @@
   - Faz backup em ..\Backup\<timestamp>\ antes de qualquer alteracao.
   - Restaura o registro do lfsvc apenas se estiver ausente/incompleto.
   - Adiciona lfsvc ao Svchost\netsvcs apenas se estiver ausente (preserva as demais entradas).
+  - Registro COM/WinRT/sistema (location-registry.json): cria somente chaves/valores AUSENTES.
+  - Registra os catalogos de assinatura do perfil (Catalogs\*.cat) e as tarefas agendadas \Microsoft\Windows\Location\*
+    que estiverem ausentes.
   - NAO altera politicas de localizacao nem permissoes de privacidade (apenas reporta).
   - Idempotente: pode ser executado varias vezes.
 
@@ -17,7 +20,7 @@
   0=lfsvc.dll 1=LocationFramework.dll 2=MUI pt-BR 3=Framework/COM 4=UI(Configuracoes/notificacao)
 
 .PARAMETER IncludeOptional
-  Inclui o grupo 9 (opcional: SysWOW64\Geolocation.dll).
+  Inclui o grupo 9 (opcional: modelo de politica LocationProviderAdm.admx/.adml).
 
 .PARAMETER WhatIf
   Modo diagnostico: mostra o que seria feito, sem alterar o sistema.
@@ -37,12 +40,13 @@ param(
 )
 
 $ErrorActionPreference = 'Continue'   # nativos (reg/sc/icacls) escrevem em stderr; erros tratados com -ErrorAction Stop
+$DryRun  = [bool]$WhatIfPreference
+$WhatIfPreference = $false   # o modo simulacao e tratado por $DryRun; o log e o backup da propria execucao precisam ser gravados
 $ts      = Get-Date -Format 'yyyyMMdd-HHmmss'
 $LogDir  = Join-Path $KitRoot 'Logs'
 New-Item -ItemType Directory -Path $LogDir -Force | Out-Null
 $Log     = Join-Path $LogDir "Restore-$ts.log"
 $History = Join-Path $LogDir 'Repair-History.log'
-$DryRun  = [bool]$WhatIfPreference
 
 function L([string]$m, [string]$c = 'Gray') {
     $line = "[{0}] {1}" -f (Get-Date -Format 'HH:mm:ss'), $m
@@ -133,10 +137,10 @@ foreach ($m in $manifest) {
     $tag  = "G$($m.Group) $($m.RelPath)"
 
     if (-not (Test-Path -LiteralPath $src)) {
-        # binarios nao sao distribuidos no repositorio: se o Windows ja tem o arquivo identico, nada a fazer
+        # copia do kit incompleta: se o Windows ja tem o arquivo identico, nada a fazer
         if ((Test-Path -LiteralPath $dest) -and (Get-FileHash -LiteralPath $dest -Algorithm SHA256).Hash -eq $m.SHA256) { L "KEEP  $tag : ja presente (identico ao manifest)" 'Green'; $kept++; continue }
         if ($m.RelPath -like '*\pt-BR\*' -and -not (Test-Path (Split-Path $dest))) { L "SKIP  $tag : idioma pt-BR nao instalado (pasta inexistente)" 'DarkYellow'; $skipped++; continue }
-        L "ERRO  $tag : ausente no kit ($src) - monte os binarios com Scripts\Build-KitFiles.ps1 (ver README)" 'Red'; $errors++; continue
+        L "ERRO  $tag : ausente no kit ($src) - pasta Profiles\ incompleta: copie o kit inteiro de novo" 'Red'; $errors++; continue
     }
     $srcHash = (Get-FileHash -LiteralPath $src -Algorithm SHA256).Hash
     if ($srcHash -ne $m.SHA256) { L "ERRO  $tag : hash do kit nao confere (esperado $($m.SHA256), obtido $srcHash)" 'Red'; $errors++; continue }
@@ -152,7 +156,7 @@ foreach ($m in $manifest) {
         $kept++; continue
     }
 
-    if ($PSCmdlet.ShouldProcess($dest, "Restaurar arquivo ausente (v$($m.Version))")) {
+    if (-not $DryRun) {
         try {
             Copy-Item -LiteralPath $src -Destination $dest -ErrorAction Stop
             Add-Content -Path $createdList -Value $dest -Encoding UTF8
@@ -176,7 +180,7 @@ if ($regOk) { L 'REG   lfsvc: configuracao presente e consistente - nenhuma alte
 else {
     $regFile = Join-Path $KP.RegistryRoot 'lfsvc-restaurar.reg'
     if (-not (Test-Path $regFile)) { L "ERRO  REG lfsvc incompleto e $regFile ausente" 'Red'; $errors++ }
-    elseif ($PSCmdlet.ShouldProcess('HKLM\...\Services\lfsvc', "Importar $regFile")) {
+    elseif (-not $DryRun) {
         & reg.exe import $regFile 2>&1 | Out-Null
         if ($LASTEXITCODE -eq 0) { L 'REG   lfsvc: configuracao importada de Registry\lfsvc-restaurar.reg' 'Cyan'; Hist 'lfsvc-restaurar.reg importado.'; $regChanged = $true; Add-Content (Join-Path $Backup 'changes.txt') 'lfsvc-restaurar.reg importado' }
         else { L 'ERRO  REG falha ao importar lfsvc-restaurar.reg' 'Red'; $errors++ }
@@ -203,7 +207,7 @@ else {
 $shKey = 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost'
 $ns = @((Get-ItemProperty $shKey -Name netsvcs -ErrorAction SilentlyContinue).netsvcs)
 if ($ns | Where-Object { $_ -ieq 'lfsvc' }) { L "REG   netsvcs: lfsvc ja presente ($($ns.Count) entradas) - nenhuma alteracao" 'Green' }
-elseif ($PSCmdlet.ShouldProcess('Svchost\netsvcs', 'Adicionar lfsvc (preservando demais entradas)')) {
+elseif (-not $DryRun) {
     try {
         $new = @($ns | Where-Object { $_ }) + 'lfsvc'
         Set-ItemProperty -Path $shKey -Name netsvcs -Value ([string[]]$new) -Type MultiString -ErrorAction Stop
@@ -215,7 +219,9 @@ elseif ($PSCmdlet.ShouldProcess('Svchost\netsvcs', 'Adicionar lfsvc (preservando
 }
 
 # ------------------------------------------------------------------ registro COM / SystemSettings (aditivo)
-# Fonte: Registry\location-registry.json (extraido do hive SOFTWARE da imagem 19041.3636).
+# Fonte: Registry\location-registry.json (extraido dos hives da imagem original; as entradas "Source":"manifest" sao as
+# chaves que os manifestos dos componentes de geolocalizacao declaram: ProgIDs/Interfaces/TypeLib da Location API,
+# classes WinRT, notificacoes, BackgroundModel, log de eventos).
 # Regras: cria somente chaves/valores AUSENTES; nunca altera valor existente; so aplica uma
 # entrada se o arquivo que ela referencia existir no disco; registra tudo que criou para rollback.
 $comData = Join-Path $KP.RegistryRoot 'location-registry.json'
@@ -228,23 +234,31 @@ else {
     $hklm = [Microsoft.Win32.RegistryKey]::OpenBaseKey('LocalMachine', 'Registry64')
     $sysRoot = $env:SystemRoot
     $protected = New-Object System.Collections.Generic.List[string]
-    $privOn = $false; $settingsCreated = 0
+    $privOn = $false; $privTried = $false; $settingsCreated = 0; $newByGroup = @{}
     foreach ($e in $entries) {
         if ($e.RequiresFile -and -not (Test-Path (Join-Path $sysRoot $e.RequiresFile))) { $regStats.skipped++; continue }
-        # SystemSettings\SettingId (dono TrustedInstaller): criado com SeRestorePrivilege, sem alterar dono/ACL
-        if ($e.Group -eq 'SystemSettings') {
+        # SystemSettings\SettingId (dono TrustedInstaller) e entradas "Protected" (WindowsRuntime, BackgroundModel...):
+        # criadas com SeRestorePrivilege, sem alterar dono/ACL
+        if ($e.Protected -or $e.Group -eq 'SystemSettings') {
             if ($DryRun) {
-                foreach ($k in $e.Keys) { $t = $hklm.OpenSubKey($k.Path); if ($t) { $t.Close() } else { $regStats.keys++; $regStats.values += @($k.Values).Count } }
+                foreach ($k in $e.Keys) {
+                    $t = $null; try { $t = $hklm.OpenSubKey($k.Path) } catch { }
+                    if (-not $t) { $regStats.keys++; $regStats.values += @($k.Values).Count; continue }
+                    foreach ($v in @($k.Values)) { if ($null -eq $t.GetValue([string]$v.Name, $null, 'DoNotExpandEnvironmentNames')) { $regStats.values++ } else { $regStats.kept++ } }
+                    $t.Close()
+                }
                 continue
             }
-            if (-not $privOn) {
+            if (-not $privOn -and -not $privTried) {
+                $privTried = $true
                 $privOn = Set-KitRestorePrivilege $true
-                if (-not $privOn) { L 'AVISO REG SystemSettings: nao foi possivel ativar SeRestorePrivilege - chaves protegidas NAO criadas' 'Yellow' }
+                if (-not $privOn) { L 'AVISO REG: nao foi possivel ativar SeRestorePrivilege - chaves protegidas NAO criadas' 'Yellow' }
             }
             if (-not $privOn) { $protected.Add($e.Root); continue }
             $r = Restore-KitProtectedEntry $e $sysRoot $regCreated
             $regStats.keys += $r.Keys; $regStats.values += $r.Values; $regStats.kept += $r.Kept
             if ($r.Error) { L "ERRO  REG HKLM\$($e.Root) (protegida): $($r.Error)" 'Red'; $errors++ }
+            elseif ($e.Group -ne 'SystemSettings') { if ($r.Keys -or $r.Values) { $newByGroup[$e.Group] = 1 + [int]$newByGroup[$e.Group] } }
             elseif ($r.Keys -or $r.Values) { L ("REG   HKLM\{0}: criada ({1} valores) com privilegio de restauracao - dono/ACL do Windows inalterados" -f $e.Root, $r.Values) 'Cyan'; $settingsCreated++ }
             continue
         }
@@ -294,6 +308,7 @@ else {
     }
     if ($privOn) { [void](Set-KitRestorePrivilege $false) }
     if ($settingsCreated) { L "REG   SystemSettings: $settingsCreated controle(s) da pagina Privacidade > Localizacao registrados. Feche e reabra Configuracoes para aparecerem." 'Cyan'; Hist "SystemSettings: $settingsCreated chave(s) criadas com SeRestorePrivilege" }
+    if ($newByGroup.Count) { L ('REG   entradas restauradas com privilegio de restauracao (dono/ACL do Windows inalterados): ' + (($newByGroup.GetEnumerator() | Sort-Object Name | ForEach-Object { "$($_.Name)=$($_.Value)" }) -join ', ')) 'Cyan' }
     foreach ($pk in ($protected | Select-Object -Unique)) {
         L "AVISO REG HKLM\$pk ausente, mas a chave pai e protegida (TrustedInstaller). NAO criada - ver README (acao manual opcional)." 'Yellow'
     }
@@ -301,6 +316,35 @@ else {
     L ("REG   COM/SystemSettings: {0}: {1} chaves, {2} valores | ja presentes: {3} valores | divergentes preservados: {4} | entradas ignoradas (arquivo ausente): {5}" -f $verb, $regStats.keys, $regStats.values, $regStats.kept, $regStats.diff, $regStats.skipped) $(if ($regStats.keys -or $regStats.values) { 'Cyan' } else { 'Green' })
     if (-not $DryRun -and ($regStats.keys -or $regStats.values)) { Hist ("Registro COM/SystemSettings restaurado: {0} chaves, {1} valores (lista: {2})" -f $regStats.keys, $regStats.values, $regCreated) }
 }
+
+# ------------------------------------------------------------------ catalogos de assinatura
+# Os binarios do perfil nao tem assinatura embutida: so sao reconhecidos como assinados pela Microsoft se o catalogo do
+# pacote deles estiver registrado. Registra somente os catalogos AUSENTES (rollback: -RemoveTasksAndCatalogs).
+$catNew = 0
+foreach ($c in @(Get-KitCatalogState $KP | Where-Object { -not $_.Ok })) {
+    if ($DryRun) { $catNew++; continue }
+    try { [KitCat]::Add($c.FullName); Add-Content (Join-Path $Backup 'changes.txt') "CATALOG $($c.Name)" -Encoding UTF8; $catNew++ }
+    catch { L "AVISO catalogo $($c.Name): $($_.Exception.Message)" 'Yellow' }
+}
+L ("CAT   catalogos de assinatura {0}: {1}" -f $(if ($DryRun) { 'a registrar (WHATIF)' } else { 'registrados' }), $catNew) $(if ($catNew) { 'Cyan' } else { 'Green' })
+
+# ------------------------------------------------------------------ tarefas agendadas
+# \Microsoft\Windows\Location\Notifications (inicia o LocationNotificationWindows.exe = icone "localizacao em uso") e
+# \Microsoft\Windows\Location\WindowsActionDialog. Registra somente as AUSENTES, e so se o executavel existir.
+$taskNew = 0
+foreach ($t in @(Get-KitTaskState $KP | Where-Object { -not $_.Ok })) {
+    $tn = "$($t.TaskPath)$($t.TaskName)"
+    if (-not $t.Applicable) { if (-not $DryRun) { L "AVISO tarefa '$tn': $($t.RequiresFile) ausente - nao registrada" 'Yellow' }; continue }
+    $xml = Join-Path $KP.TasksRoot $t.File
+    if (-not (Test-Path -LiteralPath $xml)) { L "ERRO  tarefa '$tn': $xml ausente no kit" 'Red'; $errors++; continue }
+    if ($DryRun) { L "WHATIF tarefa '$tn' seria registrada" 'Yellow'; $taskNew++; continue }
+    try {
+        Register-ScheduledTask -TaskPath $t.TaskPath -TaskName $t.TaskName -Xml (Get-Content -LiteralPath $xml -Raw) -ErrorAction Stop | Out-Null
+        Add-Content (Join-Path $Backup 'changes.txt') "TASK $tn" -Encoding UTF8
+        L "TASK  '$tn' registrada" 'Cyan'; Hist "Tarefa agendada registrada: $tn"; $taskNew++
+    } catch { L "ERRO  tarefa '$tn': $($_.Exception.Message)" 'Red'; $errors++ }
+}
+if (-not $taskNew) { L 'TASK  tarefas agendadas de localizacao: nenhuma a registrar' 'Green' }
 
 # ------------------------------------------------------------------ teste do servico
 $svcResult = 'NAO TESTADO'
@@ -334,7 +378,7 @@ if ($needReboot) { L 'REINICIALIZACAO NECESSARIA: a configuracao do servico/nets
 else { L 'Reinicializacao: nao necessaria.' }
 Hist ("Restore-Location concluido: restaurados={0} mantidos={1} ignorados={2} erros={3} servico={4} reboot={5}" -f $created, $kept, $skipped, $errors, $svcResult, $needReboot)
 # Backup so e mantido se esta execucao alterou algo (e o que o rollback usa)
-$madeChanges = (-not $DryRun) -and ($created -gt 0 -or $regChanged -or $regStats.keys -gt 0 -or $regStats.values -gt 0)
+$madeChanges = (-not $DryRun) -and ($created -gt 0 -or $regChanged -or $regStats.keys -gt 0 -or $regStats.values -gt 0 -or $catNew -gt 0 -or $taskNew -gt 0)
 if ($madeChanges) { Copy-Item $Log $Backup -ErrorAction SilentlyContinue }
 else { Remove-Item -LiteralPath $Backup -Recurse -Force -ErrorAction SilentlyContinue; L 'Backup desta execucao descartado (nenhuma alteracao feita).' }
 if ($errors) { exit 1 } else { exit 0 }

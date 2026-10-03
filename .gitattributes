@@ -8,3 +8,9 @@
 *.dll binary
 *.exe binary
 *.mui binary
+*.cat binary
+# Conteudo extraido da imagem do Windows: validado por SHA256 (manifest.csv), NUNCA converter fim de linha (.admx/.adml)
+Profiles/*/Files/** -text
+Profiles/*/Catalogs/** -text
+Profiles/*/Tasks/** -text
+Profiles/*/Files/manifest.csv text eol=crlf

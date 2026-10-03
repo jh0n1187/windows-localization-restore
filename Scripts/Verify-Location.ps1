@@ -58,6 +58,7 @@ if (-not $KF.Files) {
         Set-Res 'Files' (Lvl (Test-Path (Join-Path $env:SystemRoot $f)) $false) ("{0} {1} (perfil sem binarios: somente diagnostico)" -f $f, $(if (Test-Path (Join-Path $env:SystemRoot $f)) { 'presente' } else { 'AUSENTE' }))
     }
 } elseif (Test-Path $mf) {
+    $unsigned = 0
     foreach ($m in (Import-Csv $mf)) {
         $d = Join-Path $env:SystemRoot $m.RelPath
         $req = $m.Required -eq 'Required'
@@ -74,9 +75,10 @@ if (-not $KF.Files) {
             if ($mach -ne $exp) { Set-Res 'Files' 'FAIL' "$($m.RelPath) arquitetura PE incorreta (0x$('{0:X}' -f $mach))"; continue }
         }
         $hashNote = if ($h -eq $m.SHA256) { 'hash=kit' } else { 'hash difere do kit (versao existente preservada)' }
+        if ($sig -ne 'Valid' -and $d -match '\.(dll|exe|mui)$') { $unsigned++ }
         Set-Res 'Files' 'PASS' ("{0} v{1} sig={2} {3}" -f $m.RelPath, $v, $sig, $hashNote)
     }
-    L '  Obs.: arquivos 19041.x restaurados da imagem aparecem como NotSigned porque o catalogo daquela build nao esta instalado; a integridade e garantida pelo SHA256 do manifest.'
+    if ($unsigned) { L "  Obs.: $unsigned binario(s) sem assinatura reconhecida: o catalogo do pacote nao esta registrado (a etapa A registra os catalogos do perfil); a integridade e garantida pelo SHA256 do manifest." }
 } else { Set-Res 'Files' 'FAIL' "manifest.csv nao encontrado ($mf)" }
 
 # ---------------------------------------------------------------- registro lfsvc
@@ -130,7 +132,7 @@ if (-not $KF.ComRegistry) {
         if ($e.RequiresFile -and -not (Test-Path (Join-Path $env:SystemRoot $e.RequiresFile))) { $stat[$g].na++; continue }
         $bad = $false
         foreach ($kk in $e.Keys) {
-            $sk = $hklm.OpenSubKey($kk.Path)
+            $sk = $null; try { $sk = $hklm.OpenSubKey($kk.Path) } catch { continue }   # existe, mas sem permissao de leitura
             if (-not $sk) { $bad = $true; break }
             foreach ($v in @($kk.Values)) { if ($null -eq $sk.GetValue($v.Name, $null, 'DoNotExpandEnvironmentNames')) { $bad = $true } }
             $sk.Close(); if ($bad) { break }
@@ -139,13 +141,32 @@ if (-not $KF.ComRegistry) {
     }
     foreach ($g in $stat.Keys) {
         $t = "{0}: {1} OK, {2} faltando, {3} N/A (arquivo opcional ausente){4}" -f $g, $stat[$g].ok, $stat[$g].miss, $stat[$g].na, $(if ($g -eq 'SystemSettings' -and $stat[$g].miss) { ' - botoes da pagina Localizacao em branco; rodar etapa A' })
-        $lvl = if (-not $stat[$g].miss) { 'PASS' } elseif ($g -eq 'SystemSettings') { 'WARN' } else { 'FAIL' }
-        Set-Res $(if ($g -eq 'SystemSettings') { 'Settings UI registry' } else { 'COM registry' }) $lvl $t
+        # COM-* e WinRT sao o caminho dos apps ate o servico (FAIL); SystemSettings e Sistema (notificacoes, BackgroundModel,
+        # log de eventos, definicoes) nao impedem a localizacao de funcionar (WARN)
+        $lvl = if (-not $stat[$g].miss) { 'PASS' } elseif ($g -in 'SystemSettings', 'Sistema') { 'WARN' } else { 'FAIL' }
+        Set-Res $(switch ($g) { 'SystemSettings' { 'Settings UI registry' } 'Sistema' { 'System registry' } default { 'COM registry' } }) $lvl $t
     }
     if ($missing) { L ('    faltando: ' + (($missing | Select-Object -First 10) -join ' ; ') + $(if ($missing.Count -gt 10) { ' ...' })) }
 } else { Set-Res 'COM registry' 'WARN' "location-registry.json nao encontrado ($comData)" }
 $rt = Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\Windows.Devices.Geolocation.Geolocator' -ErrorAction SilentlyContinue
 if ($rt -and $rt.DllPath -and (Test-Path ([Environment]::ExpandEnvironmentVariables($rt.DllPath)))) { Set-Res 'WinRT' 'PASS' "WinRT Geolocator -> $($rt.DllPath)" } else { Set-Res 'WinRT' 'WARN' 'WinRT Windows.Devices.Geolocation.Geolocator nao registrado/DLL ausente' }
+$rt32 = Get-ItemProperty 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\WindowsRuntime\ActivatableClassId\Windows.Devices.Geolocation.Geolocator' -ErrorAction SilentlyContinue
+if ($rt32 -and $rt32.DllPath -and (Test-Path ([Environment]::ExpandEnvironmentVariables($rt32.DllPath)))) { Set-Res 'WinRT' 'PASS' "WinRT Geolocator (apps 32-bit) -> $($rt32.DllPath)" } else { Set-Res 'WinRT' 'WARN' 'WinRT Geolocator para apps 32-bit nao registrado/DLL ausente (SysWOW64\Geolocation.dll)' }
+
+# ---------------------------------------------------------------- tarefas agendadas / catalogos de assinatura
+$taskSt = @(Get-KitTaskState $KP); $catSt = @(Get-KitCatalogState $KP)
+if ($taskSt.Count -or $catSt.Count) { L ''; L 'Tarefas agendadas e assinatura:' }
+foreach ($tk in $taskSt) {
+    $tn = "$($tk.TaskPath)$($tk.TaskName)"
+    if ($tk.Ok) { Set-Res 'Scheduled tasks' 'PASS' "$tn registrada" }
+    elseif (-not $tk.Applicable) { L "  [SKIP] $tn ($($tk.RequiresFile) ausente)" }
+    else { Set-Res 'Scheduled tasks' 'WARN' "$tn AUSENTE - rodar etapa A (sem a tarefa Notifications o icone de localizacao em uso nao aparece)" }
+}
+if ($catSt.Count) {
+    $cm = @($catSt | Where-Object { -not $_.Ok })
+    if ($cm) { Set-Res 'Signature catalogs' 'WARN' ("{0} de {1} catalogo(s) nao registrado(s) - binarios restaurados aparecem como NotSigned; rodar etapa A" -f $cm.Count, $catSt.Count) }
+    else { Set-Res 'Signature catalogs' 'PASS' ("{0} catalogo(s) do perfil registrados" -f $catSt.Count) }
+}
 
 # ---------------------------------------------------------------- servico
 L ''; L 'Servico:'

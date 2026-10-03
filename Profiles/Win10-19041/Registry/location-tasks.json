@@ -1,0 +1,14 @@
+[
+    {
+        "TaskPath":  "\\Microsoft\\Windows\\Location\\",
+        "TaskName":  "Notifications",
+        "File":  "Notifications.xml",
+        "RequiresFile":  "System32\\LocationNotificationWindows.exe"
+    },
+    {
+        "TaskPath":  "\\Microsoft\\Windows\\Location\\",
+        "TaskName":  "WindowsActionDialog",
+        "File":  "WindowsActionDialog.xml",
+        "RequiresFile":  "System32\\WindowsActionDialog.exe"
+    }
+]

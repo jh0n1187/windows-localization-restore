@@ -4,6 +4,8 @@
 #   profile.json        -> MinBuild/MaxBuild e quais recursos (Features) o perfil suporta
 #   Files\manifest.csv  -> binarios do perfil (somente se Features.Files = true)
 #   Registry\*          -> lfsvc-restaurar.reg e location-registry.json (somente se ServiceRegistry/ComRegistry = true)
+#   Registry\location-tasks.json + Tasks\*.xml -> tarefas agendadas \Microsoft\Windows\Location\* (opcional)
+#   Catalogs\*.cat      -> catalogos de assinatura dos pacotes que contem os binarios do perfil (opcional)
 #
 # Features:
 #   Files           restaurar binarios ausentes
@@ -39,6 +41,9 @@ function Get-KitProfile {
                 ManifestPath = Join-Path $d.FullName 'Files\manifest.csv'
                 FilesRoot    = Join-Path $d.FullName 'Files'
                 RegistryRoot = Join-Path $d.FullName 'Registry'
+                TasksData    = Join-Path $d.FullName 'Registry\location-tasks.json'
+                TasksRoot    = Join-Path $d.FullName 'Tasks'
+                CatalogsRoot = Join-Path $d.FullName 'Catalogs'
             }
         }
     }
@@ -266,6 +271,13 @@ public static class KitRegPriv {
             if (rc != 0) throw new System.ComponentModel.Win32Exception(rc);
         } finally { RegCloseKey(h); }
     }
+    public static void SetRaw(string sub, string name, uint type, byte[] data) {
+        uint d; IntPtr h = Open(sub, out d);
+        try {
+            int rc = RegSetValueEx(h, name, 0, type, data, data.Length);
+            if (rc != 0) throw new System.ComponentModel.Win32Exception(rc);
+        } finally { RegCloseKey(h); }
+    }
     public static void DeleteValue(string sub, string name) {
         uint d; IntPtr h = Open(sub, out d);
         try { int rc = RegDeleteValue(h, name); if (rc != 0 && rc != 2) throw new System.ComponentModel.Win32Exception(rc); } finally { RegCloseKey(h); }
@@ -278,13 +290,79 @@ public static class KitRegPriv {
 '@
 }
 
+# Catalogos de assinatura (CatRoot): registra pelo servico de criptografia, como o CBS faria. Sem o catalogo do pacote,
+# os binarios restaurados (que nao tem assinatura embutida) aparecem como "NotSigned".
+if (-not ('KitCat' -as [type])) {
+Add-Type -TypeDefinition @'
+using System;
+using System.ComponentModel;
+using System.IO;
+using System.Runtime.InteropServices;
+public static class KitCat {
+    [DllImport("wintrust.dll", SetLastError = true)] static extern bool CryptCATAdminAcquireContext(out IntPtr hAdmin, ref Guid subsystem, uint flags);
+    [DllImport("wintrust.dll", SetLastError = true, CharSet = CharSet.Unicode)] static extern IntPtr CryptCATAdminAddCatalog(IntPtr hAdmin, string file, string selectBaseName, uint flags);
+    [DllImport("wintrust.dll", SetLastError = true, CharSet = CharSet.Unicode)] static extern bool CryptCATAdminRemoveCatalog(IntPtr hAdmin, string name, uint flags);
+    [DllImport("wintrust.dll")] static extern bool CryptCATAdminReleaseCatalogContext(IntPtr hAdmin, IntPtr hCatInfo, uint flags);
+    [DllImport("wintrust.dll")] static extern bool CryptCATAdminReleaseContext(IntPtr hAdmin, uint flags);
+    static Guid sys = new Guid("F750E6C3-38EE-11D1-85E5-00C04FC295EE");
+    public static void Add(string file) {
+        IntPtr a; if (!CryptCATAdminAcquireContext(out a, ref sys, 0)) throw new Win32Exception(Marshal.GetLastWin32Error());
+        try {
+            IntPtr ci = CryptCATAdminAddCatalog(a, file, Path.GetFileName(file), 0);
+            if (ci == IntPtr.Zero) throw new Win32Exception(Marshal.GetLastWin32Error());
+            CryptCATAdminReleaseCatalogContext(a, ci, 0);
+        } finally { CryptCATAdminReleaseContext(a, 0); }
+    }
+    public static void Remove(string name) {
+        IntPtr a; if (!CryptCATAdminAcquireContext(out a, ref sys, 0)) throw new Win32Exception(Marshal.GetLastWin32Error());
+        try { if (!CryptCATAdminRemoveCatalog(a, name, 0)) throw new Win32Exception(Marshal.GetLastWin32Error()); } finally { CryptCATAdminReleaseContext(a, 0); }
+    }
+}
+'@
+}
+$KitCatRoot = Join-Path $env:SystemRoot 'System32\CatRoot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}'
+
+# Tarefas agendadas e catalogos do perfil x maquina (somente leitura) - usado pelo diagnostico e pela verificacao
+function Get-KitTaskState($KitProf) {
+    if (-not $KitProf -or -not (Test-Path $KitProf.TasksData)) { return @() }
+    $td = Get-Content $KitProf.TasksData -Raw -Encoding UTF8 | ConvertFrom-Json   # (PS 5.1 devolve a matriz como um unico objeto no pipeline)
+    foreach ($t in @($td)) {
+        [pscustomobject]@{ TaskPath = $t.TaskPath; TaskName = $t.TaskName; File = $t.File; RequiresFile = $t.RequiresFile
+            Applicable = (-not $t.RequiresFile) -or (Test-Path -LiteralPath (Join-Path $env:SystemRoot $t.RequiresFile))
+            Ok = [bool](Get-ScheduledTask -TaskPath $t.TaskPath -TaskName $t.TaskName -ErrorAction SilentlyContinue) }
+    }
+}
+function Get-KitCatalogState($KitProf) {
+    if (-not $KitProf) { return @() }
+    foreach ($c in @(Get-ChildItem $KitProf.CatalogsRoot -Filter *.cat -ErrorAction SilentlyContinue)) {
+        [pscustomobject]@{ Name = $c.Name; FullName = $c.FullName; Ok = (Test-Path -LiteralPath (Join-Path $KitCatRoot $c.Name)) }
+    }
+}
+
 function Set-KitRestorePrivilege([bool]$Enable) {
     $ok = [KitRegPriv]::SetPrivilege('SeRestorePrivilege', $Enable)
     [void][KitRegPriv]::SetPrivilege('SeBackupPrivilege', $Enable)
     return $ok
 }
 
-# Restaura uma entrada do location-registry.json em chave protegida: cria chaves/valores AUSENTES, nunca altera existentes.
+# Valor do location-registry.json -> tipo REG_* + bytes crus. Os hives da imagem guardam caminhos com a letra X:.
+function Get-KitRegBytes($v, [string]$SysRoot) {
+    $fix = { param([string]$s) [regex]::Replace($s, '(?i)(?<![A-Za-z])X:\\Windows', { $SysRoot }) }
+    $hex = { param([string]$h) $b = [byte[]]::new($h.Length / 2); for ($i = 0; $i -lt $b.Length; $i++) { $b[$i] = [Convert]::ToByte($h.Substring($i * 2, 2), 16) }; , $b }
+    switch ([string]$v.Type) {
+        'String'       { return [pscustomobject]@{ Type = 1; Bytes = [Text.Encoding]::Unicode.GetBytes((& $fix ([string]$v.Data)) + "`0") } }
+        'ExpandString' { return [pscustomobject]@{ Type = 2; Bytes = [Text.Encoding]::Unicode.GetBytes((& $fix ([string]$v.Data)) + "`0") } }
+        'MultiString'  { $items = @($v.Data | ForEach-Object { & $fix ([string]$_) }); return [pscustomobject]@{ Type = 7; Bytes = [Text.Encoding]::Unicode.GetBytes($(if ($items.Count) { ($items -join "`0") + "`0`0" } else { "`0" })) } }
+        'DWord'        { return [pscustomobject]@{ Type = 4; Bytes = [BitConverter]::GetBytes([uint32]$v.Data) } }
+        'QWord'        { return [pscustomobject]@{ Type = 11; Bytes = [BitConverter]::GetBytes([uint64]$v.Data) } }
+        'Binary'       { return [pscustomobject]@{ Type = 3; Bytes = (& $hex ([string]$v.Data)) } }
+        'Raw'          { return [pscustomobject]@{ Type = [int]$v.RegType; Bytes = (& $hex ([string]$v.Data)) } }
+        default        { throw "tipo $($v.Type) nao suportado ($($v.Name))" }
+    }
+}
+
+# Restaura uma entrada do location-registry.json com o privilegio de restauracao (funciona em chave protegida e em chave
+# comum): cria chaves/valores AUSENTES, nunca altera existentes.
 # Registra em $CreatedLog: "PKEY HKLM\<chave>" e "PVAL HKLM\<chave>|<valor>" (usados pelo Rollback-Location -RemoveCreatedRegistry).
 function Restore-KitProtectedEntry($Entry, [string]$SysRoot, [string]$CreatedLog) {
     $res = [pscustomobject]@{ Keys = 0; Values = 0; Kept = 0; Error = $null }
@@ -297,10 +375,9 @@ function Restore-KitProtectedEntry($Entry, [string]$SysRoot, [string]$CreatedLog
                 $ro = $hk.OpenSubKey($k.Path, $false)
             }
             foreach ($v in @($k.Values)) {
-                if ($v.Type -notin 'String', 'ExpandString') { throw "tipo $($v.Type) nao suportado em chave protegida ($($v.Name))" }
                 if ($ro -and $null -ne $ro.GetValue([string]$v.Name, $null, 'DoNotExpandEnvironmentNames')) { $res.Kept++; continue }
-                $data = [string]$v.Data -replace '(?i)^X:\\Windows', $SysRoot
-                [KitRegPriv]::SetString($k.Path, [string]$v.Name, $data, ($v.Type -eq 'ExpandString'))
+                $rb = Get-KitRegBytes $v $SysRoot
+                [KitRegPriv]::SetRaw($k.Path, [string]$v.Name, [uint32]$rb.Type, $rb.Bytes)
                 Add-Content $CreatedLog ("PVAL HKLM\{0}|{1}" -f $k.Path, $v.Name) -Encoding UTF8; $res.Values++
             }
             if ($ro) { $ro.Close() }

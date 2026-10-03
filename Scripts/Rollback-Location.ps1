@@ -7,6 +7,8 @@
   - Registro COM: com -RemoveCreatedRegistry remove SOMENTE as chaves/valores listados em created-registry.txt
     (criados pelo proprio kit), em ordem inversa. Chaves protegidas (PKEY/PVAL, SystemSettings) sao removidas
     com SeRestorePrivilege, sem alterar dono/ACL.
+  - Tarefas e catalogos: com -RemoveTasksAndCatalogs remove as tarefas agendadas e os catalogos de assinatura que o
+    kit registrou (linhas TASK/CATALOG do changes.txt).
   - Registro: restaura netsvcs a partir de netsvcs-before.txt e, com -RestoreServiceRegistry,
     reimporta lfsvc.reg do backup.
   Sempre pede confirmacao (use -WhatIf para simular).
@@ -20,6 +22,7 @@ param(
     [switch]$RestoreNetsvcs,
     [switch]$RestoreServiceRegistry,
     [switch]$RemoveCreatedRegistry,
+    [switch]$RemoveTasksAndCatalogs,
     [string]$KitRoot = (Split-Path $PSScriptRoot -Parent)
 )
 $ErrorActionPreference = 'Continue'
@@ -87,6 +90,23 @@ if ($RemoveCreatedRegistry) {
         if ($privOn) { [void](Set-KitRestorePrivilege $false) }
         Write-Host 'Registro COM criado pelo kit removido.' -ForegroundColor Cyan
     } else { Write-Host 'Nenhum created-registry.txt neste backup.' }
+}
+
+if ($RemoveTasksAndCatalogs) {
+    $cf = Join-Path $BackupFolder 'changes.txt'
+    foreach ($ln in @(if (Test-Path $cf) { Get-Content $cf -Encoding UTF8 | Where-Object { $_ } })) {
+        try {
+            if ($ln -like 'TASK \*') {
+                $full = $ln.Substring(5); $tp = (Split-Path $full -Parent).TrimEnd('\') + '\'; $tn = Split-Path $full -Leaf
+                if ((Get-ScheduledTask -TaskPath $tp -TaskName $tn -ErrorAction SilentlyContinue) -and $PSCmdlet.ShouldProcess($full, 'Remover tarefa agendada registrada pelo kit')) {
+                    Unregister-ScheduledTask -TaskPath $tp -TaskName $tn -Confirm:$false -ErrorAction Stop; Write-Host "tarefa removida: $full" -ForegroundColor Cyan
+                }
+            } elseif ($ln -like 'CATALOG *') {
+                $cn = $ln.Substring(8)
+                if ((Test-Path -LiteralPath (Join-Path $KitCatRoot $cn)) -and $PSCmdlet.ShouldProcess($cn, 'Remover catalogo registrado pelo kit')) { [KitCat]::Remove($cn); Write-Host "catalogo removido: $cn" -ForegroundColor Cyan }
+            }
+        } catch { Write-Host "ERRO ($ln): $($_.Exception.Message)" -ForegroundColor Red }
+    }
 }
 
 if ($RestoreNetsvcs) {
